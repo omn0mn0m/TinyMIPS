@@ -1,3 +1,4 @@
+//`timescale 1ns/1ps
 module controller_tb();
 
     parameter FINISH_TIME = 2000;
@@ -25,6 +26,9 @@ module controller_tb();
     wire [1:0] alsrcb;
     wire [1:0] aluop;
     wire [3:0] irwrite;
+    
+    //test output
+    wire [3:0] current_state;
 
     // State Encodings
     parameter FETCH1     = 4'b0001;
@@ -51,7 +55,7 @@ module controller_tb();
     parameter ADDI      = 6'b001000;
 
     // DUT Instances
-    controller(.clk(clk),
+    controller u1(.clk(clk),
                .rst(rst),
                .op(op),
                .zero(zero),
@@ -66,10 +70,11 @@ module controller_tb();
                .pcsource(pcsource),
                .alusrcb(alusrcb),
                .aluop(aluop),
-               .irwrite(irwrite));
+               .irwrite(irwrite),
+               .state(current_state));
 
     // Initialisation and Wait
-    initial begin
+    /*initial begin
         clk  = 1'b0;
         rst  = 1'b0;
         op   = 6'b000000;
@@ -79,7 +84,18 @@ module controller_tb();
         $display("Finishing simulation due to similation constraint.");
         $display("Time is - %d", $time);
         $finish;
-    end
+    end*/
+    
+    initial begin	//initialize all variables in a separate initial block
+		$display ("-----------------------------------------------------");
+		$display ("                                           AB");
+		$display ("-----------------------------------------------------");
+		$monitor ("TIME = %d, rst = %b, opcode = %b, state = %b", $time, rst, op, current_state);
+		clk  = 1'b0;
+      rst  = 1'b0;
+      op   = 6'b000000;
+      zero = 1'b0;
+	end
 
     // DUT Stimulus
     initial begin
@@ -103,7 +119,7 @@ module controller_tb();
     // Save the output
     initial begin
         $shm_open("controller_tb.db");
-        $shm_probe(alu_tb, "AS");
+        $shm_probe(controller_tb, "AS");
     end
     
     initial begin

@@ -1,11 +1,13 @@
-module controller (input clk, rst
+//`timescale 1ns/1ps
+module controller (input clk, rst,
     input [5:0] op,
     input zero,
     output reg memread, memwrite, alusrca, memtoreg, iord,
     output pcen,
     output reg regwrite, regdst,
     output reg [1:0] pcsource, alusrcb, aluop,
-    output reg [3:0] irwrite);
+    output reg [3:0] irwrite,
+    output reg [3:0] state); //added testing output 
 
     /********* State Encodings *********/
     parameter FETCH1     = 4'b0001;
@@ -32,8 +34,9 @@ module controller (input clk, rst
     parameter ADDI      = 6'b001000;
 
     /******** Local Registers ********/
-    reg [3:0] state, nextstate;
+    reg [3:0] /*state,*/ nextstate; //temporarily removed state from here
     reg pcwrite, pcwritesec;
+    reg branch; //this was in fsm but not in notes
 
     /******** State Registers *******/
     always @(posedge clk) begin //currently set at syn reset
@@ -47,11 +50,12 @@ module controller (input clk, rst
             FETCH1: nextstate <= FETCH2;
             FETCH2: nextstate <= FETCH3;
             FETCH3: nextstate <= FETCH4;
+            FETCH4: nextstate <= DECODE;
             DECODE: case(op)
                 LB:     nextstate <= MEMADR;
                 SB:     nextstate <= MEMADR;
                 ADDI:   nextstate <= MEMADR;
-                RTYPE:  nextstate <= RTPEEX;
+                RTYPE:  nextstate <= RTYPEEX;
                 BEQ:    nextstate <= BEQEX;
                 J:      nextstate <= JEX;
                 // Default state should not be entered
@@ -75,15 +79,14 @@ module controller (input clk, rst
             default: nextstate <= FETCH1;
         endcase 
     end
-
-    end
+    
     /********Output Logic ***********/
     always @(*) begin
         // Set all outputs to zero, then
         // conditionally assert just the appropriate ones
         irwrite <= 4'b0000;
         pcwrite <= 0;
-        pcwritecond <= 0;
+        pcwritesec <= 0;
         regwrite <= 0;
         regdst <= 0;
         memread <= 0;
@@ -164,6 +167,8 @@ module controller (input clk, rst
                 regwrite <= 1;
                 memtoreg <= 0;
             end
+        endcase
 
 
     end
+endmodule
