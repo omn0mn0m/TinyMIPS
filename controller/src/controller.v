@@ -150,9 +150,11 @@ module controller (input clk, rst,
             end
             ADDIWR: begin
             //NEED TO ADD CODE HERE
-            //Temp Code copying memwrite presented
-                memwrite <= 1;
-                iord <= 1;
+            //Copying r-type completion path
+                regdst <= 1;
+                regwrite <= 1;
+                memtoreg <= 0;
+
             end
             LBRD: begin
                 memread <= 1;
