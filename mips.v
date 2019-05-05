@@ -50,7 +50,8 @@ module mips #(parameter WIDTH = 8, REGBITS = 3)
                 .regwrite(regwrite),
                 .regdst(regdst),
                 .instr(instr),
-                .alucont(alucontrol));
+                .alucontrol(alucont)
+                );
 
     pc_controller pc(.zero(zero),
                      .pcen(pcen),

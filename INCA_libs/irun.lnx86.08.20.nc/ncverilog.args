@@ -1,0 +1,14 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+mips.v
+alu_regf/src/alu.v
+alu_regf/src/alucontrol.v
+controller/src/controller.v
+datapath/src/datapath.v
+datapath/src/dff.v
+datapath/src/mux.v
+datapath/src/regfile.v
+pc/src/pc_controller.v
+extmemory.v

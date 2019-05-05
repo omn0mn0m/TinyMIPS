@@ -1,0 +1,14 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+/home/seas/jack_hirschman/ECE6250/project/mips.v
+/home/seas/jack_hirschman/ECE6250/project/alu_regf/src/alu.v
+/home/seas/jack_hirschman/ECE6250/project/alu_regf/src/alucontrol.v
+/home/seas/jack_hirschman/ECE6250/project/controller/src/controller.v
+/home/seas/jack_hirschman/ECE6250/project/datapath/src/datapath.v
+/home/seas/jack_hirschman/ECE6250/project/datapath/src/dff.v
+/home/seas/jack_hirschman/ECE6250/project/datapath/src/mux.v
+/home/seas/jack_hirschman/ECE6250/project/datapath/src/regfile.v
+/home/seas/jack_hirschman/ECE6250/project/pc/src/pc_controller.v
+/home/seas/jack_hirschman/ECE6250/project/extmemory.v

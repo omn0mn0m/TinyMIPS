@@ -1,7 +1,7 @@
 module datapath (adr, instr, writedata, zero, 
                  alucontrol, alusrca, alusrcb, iord, irwrite, memdata, 
 		           memtoreg, pcen, pcsource, regdst, regwrite,
-		           clk, reset,) ;
+		           clk, reset) ;
 
    // INPUTS (13)
    input  [2:0]  alucontrol ;  // control signal for ALU
@@ -67,16 +67,16 @@ module datapath (adr, instr, writedata, zero,
 
    dff8bit instr_dtf4(.d(memdata),
            .clk(clk),
-           .rst(reset)
+           .rst(reset),
            .en(irwrite[3]),
-           .q(instr[7:0]))
+           .q(instr[7:0])
            );
 
    // instance remaining DFFs
    // TODO:
    dff8bit rd_dtf1(.d(rd1),
            .clk(clk),
-           .rst(reset)
+           .rst(reset),
            .en(1'b1),
            .q(to_mux_to_srca) //wire connection to mux going to srca
            ); 
