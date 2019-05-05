@@ -29,7 +29,9 @@ module mips #(parameter WIDTH = 8, REGBITS = 3)
                     .pcsource(pcsource),
                     .alusrcb(alusrcb),
                     .aluop(aluop),
-                    .irwrite(irwrite));
+                    .irwrite(irwrite),
+                    .pcwrite(pcwrite),
+                    .branch(branch));
 
     alucontrol ac(.aluop(aluop),
                   .funct(instr[5:0]), //changing this from .funct(instr[31:26]) to .funct(instr[5:0])

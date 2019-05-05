@@ -69,6 +69,7 @@ module test () ;
       // Next step, set the necessary control modules to load info into REG FILE
       // may wish to monitor different vars:
       // $monitor ("CLK= %b, instruction= %b", clk, instr ) ;
+      
 
       // complete the ADD instruction, store results in REG file, verify output
 

@@ -6,7 +6,8 @@ module controller (input clk, rst,
     output pcen,
     output reg regwrite, regdst,
     output reg [1:0] pcsource, alusrcb, aluop,
-    output reg [3:0] irwrite);
+    output reg [3:0] irwrite),
+    output reg pcwrite, branch;
     //output reg [3:0] state); //added testing output 
 
     /********* State Encodings *********/
@@ -35,8 +36,9 @@ module controller (input clk, rst,
 
     /******** Local Registers ********/
     reg [3:0] state, nextstate; //temporarily removed state from here
-    reg pcwrite, pcwritesec;
-    reg branch; //this was in fsm but not in notes
+    //reg pcwrite,
+    reg pcwritesec;
+    //reg branch; //this was in fsm but not in notes
 
     /******** State Registers *******/
     always @(posedge clk) begin //currently set at syn reset
@@ -86,6 +88,7 @@ module controller (input clk, rst,
         // conditionally assert just the appropriate ones
         irwrite <= 4'b0000;
         pcwrite <= 0;
+        branch <= 0;
         pcwritesec <= 0;
         regwrite <= 0;
         regdst <= 0;
