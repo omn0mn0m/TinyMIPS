@@ -69,7 +69,14 @@ module test () ;
       // Next step, set the necessary control modules to load info into REG FILE
       // may wish to monitor different vars:
       // $monitor ("CLK= %b, instruction= %b", clk, instr ) ;
-      
+      regwrite = 1'b1; #1; regwrite = 1'b0;
+
+      // R-Type
+      srca = 1; srcb = 2'b00; alucontrol = 3'b010; #5;
+      srca = 0; srcb = 2'b00; alucontrol = 3'b000;
+
+      // Reg Write
+      regdst = 1'b1; regwrite = 1'b1; #1;
 
       // complete the ADD instruction, store results in REG file, verify output
 

@@ -6,8 +6,8 @@ module controller (input clk, rst,
     output pcen,
     output reg regwrite, regdst,
     output reg [1:0] pcsource, alusrcb, aluop,
-    output reg [3:0] irwrite),
-    output reg pcwrite, branch;
+    output reg [3:0] irwrite,
+    output reg pcwrite, branch);
     //output reg [3:0] state); //added testing output 
 
     /********* State Encodings *********/
