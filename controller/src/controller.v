@@ -6,8 +6,8 @@ module controller (input clk, rst,
     output pcen,
     output reg regwrite, regdst,
     output reg [1:0] pcsource, alusrcb, aluop,
-    output reg [3:0] irwrite,
-    output reg [3:0] state); //added testing output 
+    output reg [3:0] irwrite);
+    //output reg [3:0] state); //added testing output 
 
     /********* State Encodings *********/
     parameter FETCH1     = 4'b0001;
@@ -34,7 +34,7 @@ module controller (input clk, rst,
     parameter ADDI      = 6'b001000;
 
     /******** Local Registers ********/
-    reg [3:0] /*state,*/ nextstate; //temporarily removed state from here
+    reg [3:0] state, nextstate; //temporarily removed state from here
     reg pcwrite, pcwritesec;
     reg branch; //this was in fsm but not in notes
 
