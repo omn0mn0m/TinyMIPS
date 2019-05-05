@@ -30,8 +30,8 @@ module controller (input clk, rst,
     parameter LB        = 6'b100000;
     parameter SB        = 6'b101000;
     parameter RTYPE     = 6'b000000;
-    parameter BEQ       = 6'b100100;
-    parameter J         = 6'b100010;
+    parameter BEQ       = 6'b000100;
+    parameter J         = 6'b000010;
     parameter ADDI      = 6'b001000;
 
     /******** Local Registers ********/
@@ -152,11 +152,14 @@ module controller (input clk, rst,
                 pcsource <= 2'b10;
             end
             ADDIWR: begin
-            //NEED TO ADD CODE HERE
-            //Copying r-type completion path
-                regdst <= 1;
+            // //NEED TO ADD CODE HERE
+            // //Copying r-type completion path
+            //     regdst <= 1;
+            //     regwrite <= 1;
+            //     memtoreg <= 0;
+            // Some bro's
                 regwrite <= 1;
-                memtoreg <= 0;
+                iord <= 1;
 
             end
             LBRD: begin

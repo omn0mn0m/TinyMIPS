@@ -35,7 +35,7 @@ module datapath (adr, instr, writedata, zero,
 
    // shift left constant field by 2 (constx4)
    // TODO: hint can easily be done using an assign statement
-   assign constx4 = {instr[5:0], {1'b0, 1'b0}};
+   assign constx4 = {instr[5:0], 2'b00;
 
    // register file address fields
    // TODO: ra1 and ra2 can easily be wired using assign statement
@@ -47,28 +47,28 @@ module datapath (adr, instr, writedata, zero,
    dff8bit instr_dtf1(.d(memdata),
            .clk(clk),
            .rst(reset),
-           .en(irwrite[3]),
+           .en(irwrite[0]),
            .q(instr[31:24])
            );
 
    dff8bit instr_dtf2(.d(memdata),
            .clk(clk),
            .rst(reset),
-           .en(irwrite[2]),
+           .en(irwrite[1]),
            .q(instr[23:16])
            );
 
    dff8bit instr_dtf3(.d(memdata),
            .clk(clk),
            .rst(reset),
-           .en(irwrite[1]),
+           .en(irwrite[2]),
            .q(instr[15:8])
            );
 
    dff8bit instr_dtf4(.d(memdata),
            .clk(clk),
            .rst(reset),
-           .en(irwrite[0]),
+           .en(irwrite[3]),
            .q(instr[7:0])
            );
 
