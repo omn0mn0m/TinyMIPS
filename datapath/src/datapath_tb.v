@@ -72,8 +72,8 @@ module test () ;
       regwrite = 1'b1; #1; regwrite = 1'b0;
 
       // R-Type
-      srca = 1; srcb = 2'b00; alucontrol = 3'b010; #5;
-      srca = 0; srcb = 2'b00; alucontrol = 3'b000;
+      alusrca = 1; alusrcb = 2'b00; alucontrol = 3'b010; #5;
+      alusrca = 0; alusrcb = 2'b00; alucontrol = 3'b000;
 
       // Reg Write
       regdst = 1'b1; regwrite = 1'b1; #1;
