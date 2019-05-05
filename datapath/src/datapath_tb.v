@@ -57,6 +57,7 @@ module test () ;
       memdata <= 8'b00000000 ;
 
       // TODO - perform a check to see if INSTRUCTION IS IN
+      $display("%b", instr);
 
       // check program counter is set to next pc
 
