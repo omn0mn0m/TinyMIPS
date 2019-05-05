@@ -1,2 +1,0 @@
-include ../../../../../../../apps/design_kits/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib
-define worklib ../worklib
