@@ -35,7 +35,7 @@ module datapath (adr, instr, writedata, zero,
 
    // shift left constant field by 2 (constx4)
    // TODO: hint can easily be done using an assign statement
-   assign constx4 = {instr[5:0], 2'b00;
+   assign constx4 = {instr[5:0], 2'b00};
 
    // register file address fields
    // TODO: ra1 and ra2 can easily be wired using assign statement
@@ -129,7 +129,7 @@ module datapath (adr, instr, writedata, zero,
    mux4 nextpc_mux(.a(aluresult),
         .b(aluout),
         .c(constx4),
-        .d(zero),
+        .d(8'b0),
         .sel(pcsource),
         .out(nextpc)
         );
@@ -151,9 +151,6 @@ module datapath (adr, instr, writedata, zero,
         .sel(regdst),
         .out(wa)
         );
-
-   
-      
 
    // instance register file
    // TODO:
@@ -177,7 +174,6 @@ module datapath (adr, instr, writedata, zero,
    
    // perform zero detect on output of ALU
    // TODO: could use simple assign statement, or NAND gate
-   nand zerodetect(zero, aluresult[0], aluresult[1], aluresult[2], aluresult[3],
-                   aluresult[4], aluresult[5], aluresult[6], aluresult[7]);
+   assign zero = (aluresult == 0);
 
 endmodule

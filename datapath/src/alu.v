@@ -12,7 +12,7 @@ module alu (result, a, b, alucont) ;
    // slt should be 1 if most significant bit of sum is 1
    assign slt = sum[7] ;
 
-   always@(*)
+   always@(a or b or alucont or sum or slt)
       case(alucont[1:0])
          2'b00: result <= a & b ;
          2'b01: result <= a | b ;

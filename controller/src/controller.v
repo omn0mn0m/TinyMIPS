@@ -47,7 +47,7 @@ module controller (input clk, rst,
     end
 
     /******** Next State Logic ******/
-    always @(*) begin
+    always @(state) begin
         case (state) 
             FETCH1: nextstate <= FETCH2;
             FETCH2: nextstate <= FETCH3;
@@ -74,6 +74,7 @@ module controller (input clk, rst,
             LBWR:    nextstate <= FETCH1;
             SBWR:    nextstate <= FETCH1;
             RTYPEEX: nextstate <= RTYPEWR;
+            RTYPEWR: nextstate <= FETCH1;
             BEQEX:   nextstate <= FETCH1;
             JEX:     nextstate <= FETCH1;
             ADDIWR:  nextstate <= FETCH1;
@@ -83,7 +84,7 @@ module controller (input clk, rst,
     end
     
     /********Output Logic ***********/
-    always @(*) begin
+    always @(state) begin
         // Set all outputs to zero, then
         // conditionally assert just the appropriate ones
         irwrite <= 4'b0000;
@@ -138,7 +139,7 @@ module controller (input clk, rst,
             RTYPEEX: begin
                 alusrca <= 1;
                 alusrcb <= 2'b00;
-                aluop <= 2'b00;
+                aluop <= 2'b10;
             end
             BEQEX: begin
                 alusrca <= 1;
@@ -152,15 +153,8 @@ module controller (input clk, rst,
                 pcsource <= 2'b10;
             end
             ADDIWR: begin
-            // //NEED TO ADD CODE HERE
-            // //Copying r-type completion path
-            //     regdst <= 1;
-            //     regwrite <= 1;
-            //     memtoreg <= 0;
-            // Some bro's
                 regwrite <= 1;
                 iord <= 1;
-
             end
             LBRD: begin
                 memread <= 1;
@@ -173,10 +167,13 @@ module controller (input clk, rst,
             RTYPEWR: begin
                 regdst <= 1;
                 regwrite <= 1;
-                memtoreg <= 0;
+                // memtoreg <= 0;
+            end
+            LBWR: begin
+                regwrite <= 1;
+                memtoreg <= 1;
             end
         endcase
-
-
     end
+    
 endmodule

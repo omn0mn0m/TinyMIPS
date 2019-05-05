@@ -6,14 +6,13 @@ module alucontrol( alucont, aluop, funct ) ;
 
 // the ALU will rely onlt on the alucont line and not the funct line.
 
-
    input  [1:0] aluop   ;
    input  [5:0] funct   ;
    output [2:0] alucont ;
 
    reg    [2:0] alucont ;
 
-   always @(*)
+   always @(aluop or funct)
       case(aluop)
          2'b00: alucont <= 3'b010;  // add for lb/sb
          2'b01: alucont <= 3'b110;  // sub (for beq)
