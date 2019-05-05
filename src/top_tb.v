@@ -15,7 +15,8 @@ module top_tb #(parameter WIDTH = 8, REGBITS = 3)();
    reg reset = 1;
 
    // instantiate devices to be tested
-   mips_mem #(WIDTH,REGBITS) dut(clk, reset);
+   mips_mem #(WIDTH,REGBITS) dut(.clk(clk),
+                                 .reset(reset));
 
    // initialize the test, then quit after a while
    initial

@@ -24,10 +24,24 @@ module test () ;
    wire        zero       ;  // output coming from zero detect module
 
 
-   datapath myDatapath (adr, instr, writedata, zero, 
-                        alucontrol, alusrca, alusrcb, iord, irwrite, memdata, 
-		        memtoreg, pcen, pcsource, regdst, regwrite,
-		        clk, reset ) ;
+   datapath myDatapath (.adr(adr),
+                        .instr(instr), 
+                        .writedata(writedata), 
+                        .zero(zero), 
+                        .alucontrol(alucontrol), 
+                        .alusrca(alusrca), 
+                        .alusrcb(alusrcb), 
+                        .iord(iord), 
+                        .irwrite(irwrite), 
+                        .memdata(memdata), 
+		                  .memtoreg(memtoreg), 
+                        .pcen(pcen), 
+                        .pcsource(pcsource), 
+                        .regdst(regdst), 
+                        .regwrite(regwrite),
+		                  .clk(clk), 
+                        .reset(reset)
+                       );
 
    initial begin
       $monitor ("CLK= %b, instruction= %b", clk, instr ) ;
