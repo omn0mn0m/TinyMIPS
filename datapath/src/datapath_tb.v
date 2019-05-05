@@ -62,7 +62,7 @@ module test () ;
       end
 
       // check program counter is set to next pc
-      if (pc == nextpc) begin
+      if (myDatapath.pc == myDatapath.nextpc) begin
          $display("PC set to next PC!");
       end
 

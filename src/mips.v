@@ -12,6 +12,7 @@ module mips #(parameter WIDTH = 8, REGBITS = 3)
     wire [1:0]  aluop, pcsource, alusrcb;
     wire [3:0]  irwrite;
     wire [2:0]  alucont;
+    wire pcwrite, branch;
 
     controller cont(.clk(clk),
                     .rst(rst),
