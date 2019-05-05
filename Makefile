@@ -8,7 +8,7 @@ compile:
 	sim-nc $(TOP_LEVEL) $(SUPPORT_FILES)
 
 sim:
-	sim_nc $(TESTBENCH_FILES) $(TOP_LEVEL) $(SUPPORT_FILES)
+	sim-nc $(TESTBENCH_FILES) $(TOP_LEVEL) $(SUPPORT_FILES)
 
 syn:
 	dc_shell -f dc_syn.tcl
