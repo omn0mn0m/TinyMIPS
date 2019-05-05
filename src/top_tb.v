@@ -32,24 +32,25 @@ module top_tb #(parameter WIDTH = 8, REGBITS = 3)();
 
    // check the data on the memory interface of the mips_dut
    // Check whenever the memwrite signal is active
-   always@(negedge clk)
-      begin
-         if(dut.memwrite)
-            if(dut.adr == 8'hff & dut.writedata == 8'h0D)
-		begin
+   always@(negedge clk) begin
+      if(dut.memwrite) begin
+         if(dut.adr == 8'hff & dut.writedata == 8'h0D) begin
+		      begin
                $display("Fibonacci Simulation was successful!!!");
-		#(4*CLKPERIOD)
-	       $display("Ending Simulation.");
+		         #(4*CLKPERIOD)
+	            $display("Ending Simulation.");
                $finish;
-		end
+		      end
             else begin 
-                 $display("Fibonacci Simulation has failed...");
-                 $display("Data at address FF should be 0D");
-		#(4*CLKPERIOD)
-	       $display("Ending Simulation.");
+               $display("Fibonacci Simulation has failed...");
+               $display("Data at address FF should be 0D");
+		         #(4*CLKPERIOD)
+	            $display("Ending Simulation.");
                $finish;
-                 end
+            end
+         end
       end
+   end
 
 	initial	
 	begin

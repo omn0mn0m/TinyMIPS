@@ -13,9 +13,9 @@ module mips_mem #(parameter WIDTH = 8, REGBITS = 3)(clk, reset);
    wire	   en = 1;
 
    // instantiate the mips processor
-   mips #(WIDTH,REGBITS) mips(clk, reset, memdata, memread, memwrite, adr, writedata);
+   mips #(WIDTH,REGBITS) mips1(clk, reset, memdata, memread, memwrite, adr, writedata);
 
    // instantiate memory for code and data
-   exmem #(WIDTH) exmem(clk, en, memwrite, adr, writedata, memdata);
+   exmem #(WIDTH) exmem1(clk, en, memwrite, adr, writedata, memdata);
 
 endmodule
