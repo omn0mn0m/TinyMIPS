@@ -22,8 +22,8 @@ module exmem #(parameter WIDTH = 8, RAM_ADDR_BITS = 8)
 		mips_ram[i]=8'b0;
 		end
 	$display("memory scrubbed");
-	$readmemh("./src/memory_files/fib.dat", mips_ram);
-//	$readmemb("./src/memory_files/add.dat", mips_ram);
+//	$readmemh("./src/memory_files/fib.dat", mips_ram);
+	$readmemb("./src/memory_files/add.dat", mips_ram);
 	$display ("File loaded.");
 	end
 
