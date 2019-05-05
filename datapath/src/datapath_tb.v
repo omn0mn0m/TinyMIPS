@@ -57,7 +57,7 @@ module test () ;
       memdata <= 8'b00000000 ;
 
       // TODO - perform a check to see if INSTRUCTION IS IN
-      if (instr == 8'b00000000010000110000100000100000) begin
+      if (instr == 32'b00000000010000110000100000100000) begin
          $display("Instruction fully loaded!");
       end
 
