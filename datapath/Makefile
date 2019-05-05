@@ -1,5 +1,5 @@
 TOP_LEVEL = ./src/datapath.v
-SUPPORT_FILES = ./datapath/src/alu.v ./datapath/src/datapath.v ./datapath/src/dff.v ./datapath/src/mux.v ./datapath/src/regfile.v
+SUPPORT_FILES = ./src/alu.v ./src/datapath.v ./src/dff.v ./src/mux.v ./src/regfile.v
 TESTBENCH_FILES = ./src/datapath_tb.v
 
 .PHONY: compile syn test atpg
