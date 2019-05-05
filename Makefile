@@ -8,3 +8,5 @@ test:
 
 atpg:
 	tmax tmax_atpg.tcl
+    
+# Test
