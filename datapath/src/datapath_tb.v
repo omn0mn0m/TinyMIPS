@@ -57,9 +57,14 @@ module test () ;
       memdata <= 8'b00000000 ;
 
       // TODO - perform a check to see if INSTRUCTION IS IN
-      $display("%b", instr);
+      if (instr == 8'b00000000010000110000100000100000) begin
+         $display("Instruction fully loaded!");
+      end
 
       // check program counter is set to next pc
+      if (pc == nextpc) begin
+         $display("PC set to next PC!");
+      end
 
       // Next step, set the necessary control modules to load info into REG FILE
       // may wish to monitor different vars:
