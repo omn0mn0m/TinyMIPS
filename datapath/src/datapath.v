@@ -47,28 +47,28 @@ module datapath (adr, instr, writedata, zero,
    dff8bit instr_dtf1(.d(memdata),
            .clk(clk),
            .rst(reset),
-           .en(irwrite[3]),
+           .en(irwrite[0]),
            .q(instr[31:24])
            );
 
    dff8bit instr_dtf2(.d(memdata),
            .clk(clk),
            .rst(reset),
-           .en(irwrite[2]),
+           .en(irwrite[1]),
            .q(instr[23:16])
            );
 
    dff8bit instr_dtf3(.d(memdata),
            .clk(clk),
            .rst(reset),
-           .en(irwrite[1]),
+           .en(irwrite[2]),
            .q(instr[15:8])
            );
 
    dff8bit instr_dtf4(.d(memdata),
            .clk(clk),
            .rst(reset),
-           .en(irwrite[0]),
+           .en(irwrite[3]),
            .q(instr[7:0])
            );
 
