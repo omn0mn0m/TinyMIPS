@@ -1,4 +1,4 @@
-module regfile #(parameter WIDTH = 8, REGBITS = 3)
+module regfile
     (rd1, rd2, clk, regwrite, ra1, ra2, wa, wd) ;
 
 // This reg file will only have registers $zero, $s0->$s7
@@ -22,7 +22,9 @@ module regfile #(parameter WIDTH = 8, REGBITS = 3)
    // 2-dimensional register (8x8) -- holds actual registers $s0 through $s7
    reg  [WIDTH - 1:0] REGS [(1 << REGBITS) - 1:0];
 
-
+   parameter WIDTH = 8;
+   parameter REGBITS = 3;
+    
    // WRITE
    always @(posedge clk)
       if (regwrite) REGS[wa] <= wd;	

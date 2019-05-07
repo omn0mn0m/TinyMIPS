@@ -2,7 +2,7 @@
 // Model of 256-word 8-bit memory for the mips processor. 
 // Erik Brunvand
 //-------------------------------------------------------
-module exmem #(parameter WIDTH = 8, RAM_ADDR_BITS = 8)
+module exmem
    (input clk, en, memwrite,
     input [7:0] adr,
     input [7:0] writedata,
@@ -11,6 +11,9 @@ module exmem #(parameter WIDTH = 8, RAM_ADDR_BITS = 8)
 
 	integer i;
    reg [7:0] mips_ram [0:256];
+
+	parameter WIDTH = 8; 
+	parameter RAM_ADDR_BITS = 8;
 
  // The following $readmemh statement initializes the RAM contents 
  // via an external file (use $readmemb for binary data). The fib.dat 
