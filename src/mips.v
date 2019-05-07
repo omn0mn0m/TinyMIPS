@@ -9,6 +9,7 @@ module mips
     input clk;
     input rst;
     input [WIDTH - 1:0] memdata;
+    input const_gnd;
     output memread;
     output memwrite;
     output [WIDTH - 1:0] writedata;
@@ -58,7 +59,8 @@ module mips
                 .regwrite(regwrite),
                 .regdst(regdst),
                 .instr(instr),
-                .alucontrol(alucont)
+                .alucontrol(alucont),
+                .const_gnd(const_gnd)
                 );
 
     pc_controller pc(.zero(zero),

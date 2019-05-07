@@ -3,21 +3,22 @@
 module datapath (adr, instr, writedata, zero, 
                  alucontrol, alusrca, alusrcb, iord, irwrite, memdata, 
 		           memtoreg, pcen, pcsource, regdst, regwrite,
-		           clk, reset) ;
+		           clk, reset, const_gnd) ;
 
    // INPUTS (13)
    input  [2:0]  alucontrol ;  // control signal for ALU
    input         alusrca    ;  // control signal for 2:1 mux for ALU's srca input
    input  [1:0]  alusrcb    ;  // control signal for 4:1 mux for ALU's srcb input
-   input 	 iord       ;  // control signal for 2:1 mux from Program counter
+   input 	       iord       ;  // control signal for 2:1 mux from Program counter
    input  [3:0]  irwrite    ;  // control signal for the 4 DFF's holding the instruction
    input  [7:0]  memdata    ;  // 8-bit line coming from memory's RD line
-   input 	 memtoreg   ;  // control signal for the 2:1 mux for memory's WD line
+   input 	       memtoreg   ;  // control signal for the 2:1 mux for memory's WD line
    input         pcen       ;  // control signal for PC's DFF
-   input 	 regdst     ;  // control signal for 2:1 mux for memory's WA line
-   input 	 regwrite   ;  // control signal for regfile
+   input 	       regdst     ;  // control signal for 2:1 mux for memory's WA line
+   input 	       regwrite   ;  // control signal for regfile
    input  [1:0]  pcsource   ;  // control signal for 4:1 mux leading to PC register
-   input         clk, reset ;  
+   input         clk, reset ; 
+   input         const_gnd  ;  // Ground for constant values
 
    // OUTPUTS (4)
    output [ 7:0] adr        ;  // output coming from 2:1 mux from program counter
@@ -37,7 +38,7 @@ module datapath (adr, instr, writedata, zero,
 
    // shift left constant field by 2 (constx4)
    // TODO: hint can easily be done using an assign statement
-   assign constx4 = {instr[5:0], 2'b00};
+   assign constx4 = {instr[5:0], 2{const_gnd}};
 
    // register file address fields
    // TODO: ra1 and ra2 can easily be wired using assign statement
@@ -79,21 +80,21 @@ module datapath (adr, instr, writedata, zero,
    dff8bit rd_dtf1(.d(rd1),
            .clk(clk),
            .rst(reset),
-           .en(1'b1),
+           .en(~const_gnd),
            .q(to_mux_to_srca) //wire connection to mux going to srca
            ); 
 
    dff8bit rd_dtf2(.d(rd2),
          .clk(clk),
          .rst(reset),
-         .en(1'b1),
+         .en(~const_gnd),
          .q(writedata)
          );
 
    dff8bit aluout_dtf(.d(aluresult),
          .clk(clk),
          .rst(reset),
-         .en(1'b1),
+         .en(~const_gnd),
          .q(aluout)
          );
 
@@ -107,7 +108,7 @@ module datapath (adr, instr, writedata, zero,
    dff8bit data_dtf(.d(memdata),
          .clk(clk),
          .rst(reset),
-         .en(1'b1),
+         .en(~const_gnd),
          .q(data)
          );
    
@@ -121,7 +122,7 @@ module datapath (adr, instr, writedata, zero,
         );
 
    mux4 rd2_mux(.a(writedata),
-        .b(8'b00000001),
+        .b({7{const_gnd}, ~const_gnd}),
         .c(instr[7:0]),
         .d(constx4),
         .sel(alusrcb),
@@ -131,7 +132,7 @@ module datapath (adr, instr, writedata, zero,
    mux4 nextpc_mux(.a(aluresult),
         .b(aluout),
         .c(constx4),
-        .d(8'b0),
+        .d(8{const_gnd}),
         .sel(pcsource),
         .out(nextpc)
         );

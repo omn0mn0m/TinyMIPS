@@ -18,7 +18,7 @@ module mips_mem (clk, reset);
    
 
    // instantiate the mips processor
-   mips mips1(.clk(clk), .rst(reset), .memdata(memdata), .memread(memread), .memwrite(memwrite), .adr(adr), .writedata(writedata));
+   mips mips1(.clk(clk), .rst(reset), .memdata(memdata), .memread(memread), .memwrite(memwrite), .adr(adr), .writedata(writedata), .const_gnd(1'b0));
 
    // instantiate memory for code and data
    exmem exmem1(.clk(clk), .en(en), .memwrite(memwrite), .adr(adr), .writedata(writedata), .memdata(memdata));
