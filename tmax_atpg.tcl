@@ -12,11 +12,11 @@
 #### local variables, designer must change these values ####
 ############################################################
 
-set top_module Circuit
-set synthesized_files [list ./src/Circuit_scan.v]
+set top_module mips
+set synthesized_files [list ./src/mips_scan.v]
 set cell_lib ./src/osu05_stdcells.v
 set scan_lib ./src/osu_scan.v 
-set stil_file [list ./src/Circuit_scan.spf]
+set stil_file [list ./src/mips_scan.spf]
 
 
 #################################################
