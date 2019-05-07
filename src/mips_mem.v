@@ -7,7 +7,7 @@
 module mips_mem (clk, reset);
    input clk, reset;
 
-   parameter WIDTH = 8
+   parameter WIDTH = 8;
    parameter REGBITS = 3;
    wire    memread, memwrite;
    wire    [WIDTH-1:0] adr, writedata;

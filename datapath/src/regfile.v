@@ -10,7 +10,7 @@ module regfile
 // Takes in data to write to register on line: wd
 // Only performs a WRITE on posedge of clk
 
-    parameter WIDTH = 8;
+   parameter WIDTH = 8;
    parameter REGBITS = 3;
 
    input        clk ;
