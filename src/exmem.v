@@ -42,7 +42,7 @@ module exmem
    always @(negedge clk) begin
 		if (memwrite) begin
 			mips_ram[adr] <= writedata;
-			$writememb("ram.after.dat", mips_ram) ; //write out contents of ram to file
+			$writememb("./src/memory_files/ram.after.dat", mips_ram) ; //write out contents of ram to file
 		end
 
 		memdata <= mips_ram[adr];
