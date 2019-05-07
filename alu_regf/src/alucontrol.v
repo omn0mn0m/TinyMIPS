@@ -8,9 +8,9 @@ module alucontrol( alucont, aluop, funct ) ;
 
    input  [1:0] aluop   ;
    input  [5:0] funct   ;
-   output [2:0] alucont ;
+   output reg [2:0] alucont ;
 
-   reg    [2:0] alucont ;
+   //reg    [2:0] alucont ;
 
    always @(aluop or funct)
       case(aluop)

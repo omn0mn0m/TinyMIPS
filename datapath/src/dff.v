@@ -5,7 +5,7 @@ module dff (input d,
 	    output reg q,
 	    output q_not);
 
-   always @ (posedge clk or negedge rst) begin
+   always @ (posedge clk) begin //removed negedge reset...make sync
       if (rst) begin
 	      q <= 0;
       end
@@ -29,7 +29,7 @@ module dff8bit (input [7:0] d,
        input en,
 	    output reg [7:0] q);
 
-   always @ (posedge clk or negedge rst) begin
+   always @ (posedge clk) begin 
       if (rst) begin
 	       q <= 8'b00000000;
       end
