@@ -1,9 +1,7 @@
 //`timescale 1ns/1ps
 module controller (input clk, rst,
     input [5:0] op,
-    input zero,
     output reg memread, memwrite, alusrca, memtoreg, iord,
-    output pcen,
     output reg regwrite, regdst,
     output reg [1:0] pcsource, alusrcb, aluop,
     output reg [3:0] irwrite,

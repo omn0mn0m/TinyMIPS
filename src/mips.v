@@ -42,8 +42,6 @@ module mips #(parameter WIDTH = 8, REGBITS = 3)
                 .memdata(memdata),
                 .adr(adr),
                 .writedata(writedata),
-                .zero(zero),
-                .pcen(pcen),
                 .alusrca(alusrca),
                 .alusrcb(alusrcb),
                 .iord(iord),

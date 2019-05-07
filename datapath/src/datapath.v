@@ -7,13 +7,13 @@ module datapath (adr, instr, writedata, zero,
    input  [2:0]  alucontrol ;  // control signal for ALU
    input         alusrca    ;  // control signal for 2:1 mux for ALU's srca input
    input  [1:0]  alusrcb    ;  // control signal for 4:1 mux for ALU's srcb input
-   input 	 	  iord       ;  // control signal for 2:1 mux from Program counter
+   input 	 iord       ;  // control signal for 2:1 mux from Program counter
    input  [3:0]  irwrite    ;  // control signal for the 4 DFF's holding the instruction
    input  [7:0]  memdata    ;  // 8-bit line coming from memory's RD line
-   input 	 	  memtoreg   ;  // control signal for the 2:1 mux for memory's WD line
+   input 	 memtoreg   ;  // control signal for the 2:1 mux for memory's WD line
    input         pcen       ;  // control signal for PC's DFF
-   input 	 	  regdst     ;  // control signal for 2:1 mux for memory's WA line
-   input 	 	  regwrite   ;  // control signal for regfile
+   input 	 regdst     ;  // control signal for 2:1 mux for memory's WA line
+   input 	 regwrite   ;  // control signal for regfile
    input  [1:0]  pcsource   ;  // control signal for 4:1 mux leading to PC register
    input         clk, reset ;  
 
@@ -173,7 +173,7 @@ module datapath (adr, instr, writedata, zero,
                 );
    
    // perform zero detect on output of ALU
-   // TODO: could use simple assign statement, or NAND gate...wrong NOR
-   assign zero = (aluresult == 8'b0);
+   // TODO: could use simple assign statement, or NAND gate
+   assign zero = (aluresult == 0);
 
 endmodule
