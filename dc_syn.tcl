@@ -17,8 +17,8 @@
 ####################################
 
 # list of all HDL files in the design	
-set myFiles [list ./src/ripplecarry4_clk.v ./src/fulladder.v ./src/halfadder.v] ;
-set basename ripplecarry4_clk         ;# Top-level module name
+set myFiles [list ./src/mips.v ./alu_regf/src/alu.v ./alu_regf/src/alucontrol.v ./controller/src/controller.v ./datapath/src/datapath.v ./datapath/src/dff.v ./datapath/src/mux.v ./datapath/src/regfile.v ./pc/src/pc_controller.v] ;
+set basename mips         ;# Top-level module name
 set myClk clk                    ;# The name of your clock 
 set virtual 0                       ;# 1 if virtual clock, 0 if real clock
 set myPeriod_ns 40               ;# desired clock period (in ns) (sets speed goal)

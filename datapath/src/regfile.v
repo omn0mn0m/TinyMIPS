@@ -32,8 +32,8 @@ module regfile #(parameter WIDTH = 8, REGBITS = 3)
    assign rd2 = ra2 ? REGS[ra2] : 0;   // looks up address ra2 in reg array
    				       // note: register 0 hardwired to 0
 
-    initial
-	begin
-	$monitor("Reg0 = %d :: Reg1 = %d :: Reg2 = %d :: Reg3 = %d :: Reg4 = %d Reg5 = %d :: Reg6 = %d :: Reg7 = %d", REGS[0], REGS[1], REGS[2], REGS[3], REGS[4], REGS[5], REGS[6], REGS[7]);
-	end
+   // initial
+	//begin
+	//$monitor("Reg0 = %d :: Reg1 = %d :: Reg2 = %d :: Reg3 = %d :: Reg4 = %d Reg5 = %d :: Reg6 = %d :: Reg7 = %d", REGS[0], REGS[1], REGS[2], REGS[3], REGS[4], REGS[5], REGS[6], REGS[7]);
+	//end
 endmodule
