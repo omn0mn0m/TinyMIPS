@@ -9,6 +9,7 @@ module mux(input [7:0] a,
    assign out = sel ? a : b;
       
 endmodule // mux
+`timescale 1ns/10ps
 
 module mux_smallData(input [2:0] a,	
 	   input [2:0] b,	
@@ -18,6 +19,7 @@ module mux_smallData(input [2:0] a,
    assign out = sel ? a : b;
       
 endmodule // mux_smallData
+`timescale 1ns/10ps
 
 module mux4(input [7:0] a,
 	    input [7:0] b,

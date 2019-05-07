@@ -24,6 +24,7 @@ module dff (input d,
    assign q_not = ~q;
    
 endmodule // dff
+`timescale 1ns/10ps
 
 module dff8bit (input [7:0] d,
 	    input clk,

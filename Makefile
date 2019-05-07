@@ -13,6 +13,9 @@ sim:
 syn:
 	dc_shell -f dc_syn.tcl
 
+syn_sim:
+	sim-nc $(TESTBENCH_FILES) ./src/mips_syn.v ./src/osu05_stdcells.v
+
 test:
 	dc_shell -f dc_test.tcl
 
