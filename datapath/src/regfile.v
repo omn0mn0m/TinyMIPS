@@ -10,6 +10,9 @@ module regfile
 // Takes in data to write to register on line: wd
 // Only performs a WRITE on posedge of clk
 
+    parameter WIDTH = 8;
+   parameter REGBITS = 3;
+
    input        clk ;
    input        regwrite ;  // signal to command regfile to 'write' to a reg
    input  [REGBITS - 1:0] ra1 ;	    // 3-bit address of $s0 --> $s7 (source reg: RS)
@@ -22,9 +25,8 @@ module regfile
    // 2-dimensional register (8x8) -- holds actual registers $s0 through $s7
    reg  [WIDTH - 1:0] REGS [(1 << REGBITS) - 1:0];
 
-   parameter WIDTH = 8;
-   parameter REGBITS = 3;
-    
+   
+
    // WRITE
    always @(posedge clk)
       if (regwrite) REGS[wa] <= wd;	
