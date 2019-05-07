@@ -38,7 +38,7 @@ module datapath (adr, instr, writedata, zero,
 
    // shift left constant field by 2 (constx4)
    // TODO: hint can easily be done using an assign statement
-   assign constx4 = {instr[5:0], 2{const_gnd}};
+   assign constx4 = {instr[5:0], const_gnd, const_gnd};
 
    // register file address fields
    // TODO: ra1 and ra2 can easily be wired using assign statement
