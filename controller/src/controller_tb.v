@@ -88,7 +88,7 @@ module controller_tb();
 		$display ("-----------------------------------------------------");
 		$display ("                                           AB");
 		$display ("-----------------------------------------------------");
-		$monitor ("TIME = %d, rst = %b, opcode = %b, state = %b", $time, rst, op, current_state);
+		$monitor ("TIME = %d, rst = %b, opcode = %b, state = %b", $time, rst, op, u1.state);
 		clk  = 1'b0;
       rst  = 1'b0;
       op   = 6'b000000;
