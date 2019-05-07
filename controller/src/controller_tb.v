@@ -59,20 +59,17 @@ module controller_tb();
     controller u1(.clk(clk),
                .rst(rst),
                .op(op),
-               .zero(zero),
                .memread(memread),
                .memwrite(memwrite),
                .alusrca(alusrca),
                .memtoreg(memtoreg),
                .iord(iord),
-               .pcen(pcen),
                .regwrite(regwrite),
                .regdst(regdst),
                .pcsource(pcsource),
                .alusrcb(alusrcb),
                .aluop(aluop),
-               .irwrite(irwrite),
-               .state(current_state));
+               .irwrite(irwrite));
 
     // Initialisation and Wait
     /*initial begin
