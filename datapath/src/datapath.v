@@ -38,7 +38,7 @@ module datapath (adr, instr, writedata, zero,
 
    // shift left constant field by 2 (constx4)
    // TODO: hint can easily be done using an assign statement
-   assign constx4 = {instr[5:0], const_gnd, const_gnd};
+   assign constx4 = {instr[5:0], {2{const_gnd}}};
 
    // register file address fields
    // TODO: ra1 and ra2 can easily be wired using assign statement
@@ -122,7 +122,7 @@ module datapath (adr, instr, writedata, zero,
         );
 
    mux4 rd2_mux(.a(writedata),
-        .b({7{const_gnd}, ~const_gnd}),
+        .b({{7{const_gnd}}, ~const_gnd}),
         .c(instr[7:0]),
         .d(constx4),
         .sel(alusrcb),
@@ -132,7 +132,7 @@ module datapath (adr, instr, writedata, zero,
    mux4 nextpc_mux(.a(aluresult),
         .b(aluout),
         .c(constx4),
-        .d(8{const_gnd}),
+        .d({8{const_gnd}}),
         .sel(pcsource),
         .out(nextpc)
         );
