@@ -1,7 +1,7 @@
 `timescale 1ns/10ps
 
 module mips
-    ( clk, rst, memdata, memread, memwrite, writedata, adr); //added adr for datapath  (see pg 4 of mips overview)
+    ( clk, rst, memdata, memread, memwrite, writedata, adr, const_gnd); //added adr for datapath  (see pg 4 of mips overview)
 
     parameter WIDTH = 8;
     parameter REGBITS = 3;
