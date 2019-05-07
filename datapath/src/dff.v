@@ -1,3 +1,5 @@
+`timescale 1ns/10ps
+
 module dff (input d,
 	    input clk,
 	    input rst,

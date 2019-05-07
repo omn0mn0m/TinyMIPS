@@ -9,6 +9,8 @@
 // r=rising edge,f=falling edge,*=rising or falling edge
 // -=keep last state (for registers and latchs, etc)
 
+`timescale 1ns/10ps
+
 module DFFPOSX1_SCAN(CLK,D,Q,TE,TI);
 	input	CLK,D,TE,TI;
 	output	Q;

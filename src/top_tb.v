@@ -3,12 +3,13 @@
 // Created by: Erik Brunvand of UofU
 // Modified by: William Gibb at GWU, 2010
 //-------------------------------------------------------
+`timescale 1ns/10ps
 
 // top level design for testing
 module top_tb #(parameter WIDTH = 8, REGBITS = 3)();
 
    parameter FINISHTIME = 20000;
-   parameter CLKPERIOD  = 20;
+   parameter CLKPERIOD  = 40;
 
 
    reg clk = 0;

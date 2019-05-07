@@ -2,6 +2,8 @@
 // Model of 256-word 8-bit memory for the mips processor. 
 // Erik Brunvand
 //-------------------------------------------------------
+`timescale 1ns/10ps
+
 module exmem
    (input clk, en, memwrite,
     input [7:0] adr,

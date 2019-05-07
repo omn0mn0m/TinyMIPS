@@ -1,4 +1,6 @@
 // 2-Input mux
+`timescale 1ns/10ps
+
 module mux(input [7:0] a,	
 	   input [7:0] b,	
 	   input sel,

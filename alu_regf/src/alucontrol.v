@@ -1,3 +1,5 @@
+`timescale 1ns/10ps
+
 module alucontrol( alucont, aluop, funct ) ;
 
 // this module decodes the 'funct' field from the assembly instruction

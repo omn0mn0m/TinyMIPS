@@ -1,3 +1,5 @@
+`timescale 1ns/10ps
+
 module alu (result, a, b, alucont) ;
 
    input  [7:0] a, b ;

@@ -1,3 +1,5 @@
+`timescale 1ns/10ps
+
 module test () ;
 
    parameter CLK_H = 20 ;    // half clock period

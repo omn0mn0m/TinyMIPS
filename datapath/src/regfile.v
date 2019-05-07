@@ -1,3 +1,5 @@
+`timescale 1ns/10ps
+
 module regfile
     (rd1, rd2, clk, regwrite, ra1, ra2, wa, wd) ;
 

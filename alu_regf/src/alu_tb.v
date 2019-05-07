@@ -1,3 +1,5 @@
+`timescale 1ns/10ps
+
 module alu_tb();
 
     parameter FINISH_TIME = 1000;

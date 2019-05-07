@@ -2,6 +2,7 @@
 // mips_mem.v - connect mips to memory
 // Erik Brunvand
 //-------------------------------------------------------
+`timescale 1ns/10ps
 
 // top level design includes both mips processor and memory
 module mips_mem (clk, reset);

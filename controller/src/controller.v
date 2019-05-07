@@ -1,4 +1,5 @@
-//`timescale 1ns/1ps
+`timescale 1ns/10ps
+
 module controller (input clk, rst,
     input [5:0] op,
     output reg memread, memwrite, alusrca, memtoreg, iord,

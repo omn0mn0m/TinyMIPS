@@ -1,3 +1,5 @@
+`timescale 1ns/10ps
+
 module pc_controller(input pcwrite,
                      input branch,
                      input zero,

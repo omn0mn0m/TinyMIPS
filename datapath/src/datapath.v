@@ -1,3 +1,5 @@
+`timescale 1ns/10ps
+
 module datapath (adr, instr, writedata, zero, 
                  alucontrol, alusrca, alusrcb, iord, irwrite, memdata, 
 		           memtoreg, pcen, pcsource, regdst, regwrite,

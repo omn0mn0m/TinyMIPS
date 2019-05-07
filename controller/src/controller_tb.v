@@ -1,4 +1,5 @@
-//`timescale 1ns/1ps
+`timescale 1ns/10ps
+
 module controller_tb();
 
     parameter FINISH_TIME = 2000;
