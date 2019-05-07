@@ -13,14 +13,11 @@ module mips_mem (clk, reset);
    wire    memread, memwrite;
    wire    [WIDTH-1:0] adr, writedata;
    wire    [WIDTH-1:0] memdata;
-   wire	   en = 1;
-
    
-
    // instantiate the mips processor
    mips mips1(.clk(clk), .rst(reset), .memdata(memdata), .memread(memread), .memwrite(memwrite), .adr(adr), .writedata(writedata), .const_gnd(1'b0));
 
    // instantiate memory for code and data
-   exmem exmem1(.clk(clk), .en(en), .memwrite(memwrite), .adr(adr), .writedata(writedata), .memdata(memdata));
+   exmem exmem1(.clk(clk), .memwrite(memwrite), .adr(adr), .writedata(writedata), .memdata(memdata));
 
 endmodule
