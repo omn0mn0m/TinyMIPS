@@ -4,13 +4,13 @@ module mips
     parameter WIDTH = 8;
     parameter REGBITS = 3;
 
-    input clk,
-    input rst,
-    input [WIDTH - 1:0] memdata,
-    output memread,
-    output memwrite,
-    output [WIDTH - 1:0] writedata,
-    output [WIDTH - 1:0] adr
+    input clk;
+    input rst;
+    input [WIDTH - 1:0] memdata;
+    output memread;
+    output memwrite;
+    output [WIDTH - 1:0] writedata;
+    output [WIDTH - 1:0] adr;
 
     wire [31:0] instr;
     wire        zero, alusrca, memtoreg, iord, pcen, regwrite, regdst;
