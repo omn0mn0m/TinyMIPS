@@ -1,0 +1,21 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : mips
+Version: O-2018.06-SP1
+Date   : Tue May  7 02:51:49 2019
+****************************************
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   mips                         0.00       383985.00      -383985.00
+                                                                    (VIOLATED)
+
+
+1

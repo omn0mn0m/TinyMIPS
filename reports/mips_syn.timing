@@ -1,0 +1,514 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 5
+        -max_paths 5
+        -sort_by group
+Design : mips
+Version: O-2018.06-SP1
+Date   : Tue May  7 02:51:43 2019
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: const_gnd (input port clocked by clk)
+  Endpoint: dp/pc_dtf/q_reg_4_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.30       0.30
+  input external delay                                    2.00       2.30 f
+  const_gnd (in)                                          0.07       2.37 f
+  dp/const_gnd (datapath)                                 0.00       2.37 f
+  dp/U10/Y (INVX2)                                        0.20       2.57 r
+  dp/U1/Y (INVX2)                                         0.67       3.24 f
+  dp/rd2_mux/d[0] (mux4_1)                                0.00       3.24 f
+  dp/rd2_mux/U26/Y (AOI22X1)                              0.23       3.47 r
+  dp/rd2_mux/U25/Y (NAND2X1)                              0.20       3.67 f
+  dp/rd2_mux/out[0] (mux4_1)                              0.00       3.67 f
+  dp/inst_alu/b[0] (alu)                                  0.00       3.67 f
+  dp/inst_alu/U48/Y (XOR2X1)                              0.31       3.98 f
+  dp/inst_alu/add_1_root_add_13_2/B[0] (alu_DW01_add_0)
+                                                          0.00       3.98 f
+  dp/inst_alu/add_1_root_add_13_2/U1_0/YC (FAX1)          0.46       4.44 f
+  dp/inst_alu/add_1_root_add_13_2/U1_1/YC (FAX1)          0.46       4.90 f
+  dp/inst_alu/add_1_root_add_13_2/U1_2/YC (FAX1)          0.45       5.35 f
+  dp/inst_alu/add_1_root_add_13_2/U1_3/YC (FAX1)          0.45       5.81 f
+  dp/inst_alu/add_1_root_add_13_2/U1_4/YC (FAX1)          0.45       6.26 f
+  dp/inst_alu/add_1_root_add_13_2/U1_5/YC (FAX1)          0.45       6.71 f
+  dp/inst_alu/add_1_root_add_13_2/U1_6/YC (FAX1)          0.45       7.17 f
+  dp/inst_alu/add_1_root_add_13_2/U1_7/YS (FAX1)          0.48       7.65 r
+  dp/inst_alu/add_1_root_add_13_2/SUM[7] (alu_DW01_add_0)
+                                                          0.00       7.65 r
+  dp/inst_alu/U2/Y (AND2X2)                               0.15       7.80 r
+  dp/inst_alu/U36/Y (AOI22X1)                             0.13       7.93 f
+  dp/inst_alu/U35/Y (NAND2X1)                             0.24       8.17 r
+  dp/inst_alu/result[0] (alu)                             0.00       8.17 r
+  dp/U5/Y (NOR2X1)                                        0.15       8.33 f
+  dp/U3/Y (NAND2X1)                                       0.16       8.48 r
+  dp/U2/Y (NOR2X1)                                        0.15       8.63 f
+  dp/zero (datapath)                                      0.00       8.63 f
+  pc/zero (pc_controller)                                 0.00       8.63 f
+  pc/U2/Y (AOI21X1)                                       0.15       8.78 r
+  pc/U1/Y (INVX2)                                         0.07       8.85 f
+  pc/pcen (pc_controller)                                 0.00       8.85 f
+  dp/pcen (datapath)                                      0.00       8.85 f
+  dp/pc_dtf/en (dff8bit_1)                                0.00       8.85 f
+  dp/pc_dtf/U19/Y (NOR2X1)                                0.53       9.38 r
+  dp/pc_dtf/U18/Y (NOR2X1)                                0.84      10.22 f
+  dp/pc_dtf/U14/Y (AOI22X1)                               0.21      10.43 r
+  dp/pc_dtf/U6/Y (INVX2)                                  0.07      10.51 f
+  dp/pc_dtf/q_reg_4_/D (DFFPOSX1)                         0.00      10.51 f
+  data arrival time                                                 10.51
+
+  clock clk (rise edge)                                  40.00      40.00
+  clock network delay (ideal)                             0.30      40.30
+  dp/pc_dtf/q_reg_4_/CLK (DFFPOSX1)                       0.00      40.30 r
+  library setup time                                     -0.31      39.99
+  data required time                                                39.99
+  --------------------------------------------------------------------------
+  data required time                                                39.99
+  data arrival time                                                -10.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                       29.49
+
+
+  Startpoint: const_gnd (input port clocked by clk)
+  Endpoint: dp/pc_dtf/q_reg_3_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.30       0.30
+  input external delay                                    2.00       2.30 f
+  const_gnd (in)                                          0.07       2.37 f
+  dp/const_gnd (datapath)                                 0.00       2.37 f
+  dp/U10/Y (INVX2)                                        0.20       2.57 r
+  dp/U1/Y (INVX2)                                         0.67       3.24 f
+  dp/rd2_mux/d[0] (mux4_1)                                0.00       3.24 f
+  dp/rd2_mux/U26/Y (AOI22X1)                              0.23       3.47 r
+  dp/rd2_mux/U25/Y (NAND2X1)                              0.20       3.67 f
+  dp/rd2_mux/out[0] (mux4_1)                              0.00       3.67 f
+  dp/inst_alu/b[0] (alu)                                  0.00       3.67 f
+  dp/inst_alu/U48/Y (XOR2X1)                              0.31       3.98 f
+  dp/inst_alu/add_1_root_add_13_2/B[0] (alu_DW01_add_0)
+                                                          0.00       3.98 f
+  dp/inst_alu/add_1_root_add_13_2/U1_0/YC (FAX1)          0.46       4.44 f
+  dp/inst_alu/add_1_root_add_13_2/U1_1/YC (FAX1)          0.46       4.90 f
+  dp/inst_alu/add_1_root_add_13_2/U1_2/YC (FAX1)          0.45       5.35 f
+  dp/inst_alu/add_1_root_add_13_2/U1_3/YC (FAX1)          0.45       5.81 f
+  dp/inst_alu/add_1_root_add_13_2/U1_4/YC (FAX1)          0.45       6.26 f
+  dp/inst_alu/add_1_root_add_13_2/U1_5/YC (FAX1)          0.45       6.71 f
+  dp/inst_alu/add_1_root_add_13_2/U1_6/YC (FAX1)          0.45       7.17 f
+  dp/inst_alu/add_1_root_add_13_2/U1_7/YS (FAX1)          0.48       7.65 r
+  dp/inst_alu/add_1_root_add_13_2/SUM[7] (alu_DW01_add_0)
+                                                          0.00       7.65 r
+  dp/inst_alu/U2/Y (AND2X2)                               0.15       7.80 r
+  dp/inst_alu/U36/Y (AOI22X1)                             0.13       7.93 f
+  dp/inst_alu/U35/Y (NAND2X1)                             0.24       8.17 r
+  dp/inst_alu/result[0] (alu)                             0.00       8.17 r
+  dp/U5/Y (NOR2X1)                                        0.15       8.33 f
+  dp/U3/Y (NAND2X1)                                       0.16       8.48 r
+  dp/U2/Y (NOR2X1)                                        0.15       8.63 f
+  dp/zero (datapath)                                      0.00       8.63 f
+  pc/zero (pc_controller)                                 0.00       8.63 f
+  pc/U2/Y (AOI21X1)                                       0.15       8.78 r
+  pc/U1/Y (INVX2)                                         0.07       8.85 f
+  pc/pcen (pc_controller)                                 0.00       8.85 f
+  dp/pcen (datapath)                                      0.00       8.85 f
+  dp/pc_dtf/en (dff8bit_1)                                0.00       8.85 f
+  dp/pc_dtf/U19/Y (NOR2X1)                                0.53       9.38 r
+  dp/pc_dtf/U18/Y (NOR2X1)                                0.84      10.22 f
+  dp/pc_dtf/U13/Y (AOI22X1)                               0.21      10.43 r
+  dp/pc_dtf/U7/Y (INVX2)                                  0.07      10.51 f
+  dp/pc_dtf/q_reg_3_/D (DFFPOSX1)                         0.00      10.51 f
+  data arrival time                                                 10.51
+
+  clock clk (rise edge)                                  40.00      40.00
+  clock network delay (ideal)                             0.30      40.30
+  dp/pc_dtf/q_reg_3_/CLK (DFFPOSX1)                       0.00      40.30 r
+  library setup time                                     -0.31      39.99
+  data required time                                                39.99
+  --------------------------------------------------------------------------
+  data required time                                                39.99
+  data arrival time                                                -10.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                       29.49
+
+
+  Startpoint: const_gnd (input port clocked by clk)
+  Endpoint: dp/pc_dtf/q_reg_2_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.30       0.30
+  input external delay                                    2.00       2.30 f
+  const_gnd (in)                                          0.07       2.37 f
+  dp/const_gnd (datapath)                                 0.00       2.37 f
+  dp/U10/Y (INVX2)                                        0.20       2.57 r
+  dp/U1/Y (INVX2)                                         0.67       3.24 f
+  dp/rd2_mux/d[0] (mux4_1)                                0.00       3.24 f
+  dp/rd2_mux/U26/Y (AOI22X1)                              0.23       3.47 r
+  dp/rd2_mux/U25/Y (NAND2X1)                              0.20       3.67 f
+  dp/rd2_mux/out[0] (mux4_1)                              0.00       3.67 f
+  dp/inst_alu/b[0] (alu)                                  0.00       3.67 f
+  dp/inst_alu/U48/Y (XOR2X1)                              0.31       3.98 f
+  dp/inst_alu/add_1_root_add_13_2/B[0] (alu_DW01_add_0)
+                                                          0.00       3.98 f
+  dp/inst_alu/add_1_root_add_13_2/U1_0/YC (FAX1)          0.46       4.44 f
+  dp/inst_alu/add_1_root_add_13_2/U1_1/YC (FAX1)          0.46       4.90 f
+  dp/inst_alu/add_1_root_add_13_2/U1_2/YC (FAX1)          0.45       5.35 f
+  dp/inst_alu/add_1_root_add_13_2/U1_3/YC (FAX1)          0.45       5.81 f
+  dp/inst_alu/add_1_root_add_13_2/U1_4/YC (FAX1)          0.45       6.26 f
+  dp/inst_alu/add_1_root_add_13_2/U1_5/YC (FAX1)          0.45       6.71 f
+  dp/inst_alu/add_1_root_add_13_2/U1_6/YC (FAX1)          0.45       7.17 f
+  dp/inst_alu/add_1_root_add_13_2/U1_7/YS (FAX1)          0.48       7.65 r
+  dp/inst_alu/add_1_root_add_13_2/SUM[7] (alu_DW01_add_0)
+                                                          0.00       7.65 r
+  dp/inst_alu/U2/Y (AND2X2)                               0.15       7.80 r
+  dp/inst_alu/U36/Y (AOI22X1)                             0.13       7.93 f
+  dp/inst_alu/U35/Y (NAND2X1)                             0.24       8.17 r
+  dp/inst_alu/result[0] (alu)                             0.00       8.17 r
+  dp/U5/Y (NOR2X1)                                        0.15       8.33 f
+  dp/U3/Y (NAND2X1)                                       0.16       8.48 r
+  dp/U2/Y (NOR2X1)                                        0.15       8.63 f
+  dp/zero (datapath)                                      0.00       8.63 f
+  pc/zero (pc_controller)                                 0.00       8.63 f
+  pc/U2/Y (AOI21X1)                                       0.15       8.78 r
+  pc/U1/Y (INVX2)                                         0.07       8.85 f
+  pc/pcen (pc_controller)                                 0.00       8.85 f
+  dp/pcen (datapath)                                      0.00       8.85 f
+  dp/pc_dtf/en (dff8bit_1)                                0.00       8.85 f
+  dp/pc_dtf/U19/Y (NOR2X1)                                0.53       9.38 r
+  dp/pc_dtf/U18/Y (NOR2X1)                                0.84      10.22 f
+  dp/pc_dtf/U12/Y (AOI22X1)                               0.21      10.43 r
+  dp/pc_dtf/U8/Y (INVX2)                                  0.07      10.51 f
+  dp/pc_dtf/q_reg_2_/D (DFFPOSX1)                         0.00      10.51 f
+  data arrival time                                                 10.51
+
+  clock clk (rise edge)                                  40.00      40.00
+  clock network delay (ideal)                             0.30      40.30
+  dp/pc_dtf/q_reg_2_/CLK (DFFPOSX1)                       0.00      40.30 r
+  library setup time                                     -0.31      39.99
+  data required time                                                39.99
+  --------------------------------------------------------------------------
+  data required time                                                39.99
+  data arrival time                                                -10.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                       29.49
+
+
+  Startpoint: const_gnd (input port clocked by clk)
+  Endpoint: dp/pc_dtf/q_reg_1_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.30       0.30
+  input external delay                                    2.00       2.30 f
+  const_gnd (in)                                          0.07       2.37 f
+  dp/const_gnd (datapath)                                 0.00       2.37 f
+  dp/U10/Y (INVX2)                                        0.20       2.57 r
+  dp/U1/Y (INVX2)                                         0.67       3.24 f
+  dp/rd2_mux/d[0] (mux4_1)                                0.00       3.24 f
+  dp/rd2_mux/U26/Y (AOI22X1)                              0.23       3.47 r
+  dp/rd2_mux/U25/Y (NAND2X1)                              0.20       3.67 f
+  dp/rd2_mux/out[0] (mux4_1)                              0.00       3.67 f
+  dp/inst_alu/b[0] (alu)                                  0.00       3.67 f
+  dp/inst_alu/U48/Y (XOR2X1)                              0.31       3.98 f
+  dp/inst_alu/add_1_root_add_13_2/B[0] (alu_DW01_add_0)
+                                                          0.00       3.98 f
+  dp/inst_alu/add_1_root_add_13_2/U1_0/YC (FAX1)          0.46       4.44 f
+  dp/inst_alu/add_1_root_add_13_2/U1_1/YC (FAX1)          0.46       4.90 f
+  dp/inst_alu/add_1_root_add_13_2/U1_2/YC (FAX1)          0.45       5.35 f
+  dp/inst_alu/add_1_root_add_13_2/U1_3/YC (FAX1)          0.45       5.81 f
+  dp/inst_alu/add_1_root_add_13_2/U1_4/YC (FAX1)          0.45       6.26 f
+  dp/inst_alu/add_1_root_add_13_2/U1_5/YC (FAX1)          0.45       6.71 f
+  dp/inst_alu/add_1_root_add_13_2/U1_6/YC (FAX1)          0.45       7.17 f
+  dp/inst_alu/add_1_root_add_13_2/U1_7/YS (FAX1)          0.48       7.65 r
+  dp/inst_alu/add_1_root_add_13_2/SUM[7] (alu_DW01_add_0)
+                                                          0.00       7.65 r
+  dp/inst_alu/U2/Y (AND2X2)                               0.15       7.80 r
+  dp/inst_alu/U36/Y (AOI22X1)                             0.13       7.93 f
+  dp/inst_alu/U35/Y (NAND2X1)                             0.24       8.17 r
+  dp/inst_alu/result[0] (alu)                             0.00       8.17 r
+  dp/U5/Y (NOR2X1)                                        0.15       8.33 f
+  dp/U3/Y (NAND2X1)                                       0.16       8.48 r
+  dp/U2/Y (NOR2X1)                                        0.15       8.63 f
+  dp/zero (datapath)                                      0.00       8.63 f
+  pc/zero (pc_controller)                                 0.00       8.63 f
+  pc/U2/Y (AOI21X1)                                       0.15       8.78 r
+  pc/U1/Y (INVX2)                                         0.07       8.85 f
+  pc/pcen (pc_controller)                                 0.00       8.85 f
+  dp/pcen (datapath)                                      0.00       8.85 f
+  dp/pc_dtf/en (dff8bit_1)                                0.00       8.85 f
+  dp/pc_dtf/U19/Y (NOR2X1)                                0.53       9.38 r
+  dp/pc_dtf/U18/Y (NOR2X1)                                0.84      10.22 f
+  dp/pc_dtf/U11/Y (AOI22X1)                               0.21      10.43 r
+  dp/pc_dtf/U9/Y (INVX2)                                  0.07      10.51 f
+  dp/pc_dtf/q_reg_1_/D (DFFPOSX1)                         0.00      10.51 f
+  data arrival time                                                 10.51
+
+  clock clk (rise edge)                                  40.00      40.00
+  clock network delay (ideal)                             0.30      40.30
+  dp/pc_dtf/q_reg_1_/CLK (DFFPOSX1)                       0.00      40.30 r
+  library setup time                                     -0.31      39.99
+  data required time                                                39.99
+  --------------------------------------------------------------------------
+  data required time                                                39.99
+  data arrival time                                                -10.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                       29.49
+
+
+  Startpoint: const_gnd (input port clocked by clk)
+  Endpoint: dp/pc_dtf/q_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.30       0.30
+  input external delay                                    2.00       2.30 f
+  const_gnd (in)                                          0.07       2.37 f
+  dp/const_gnd (datapath)                                 0.00       2.37 f
+  dp/U10/Y (INVX2)                                        0.20       2.57 r
+  dp/U1/Y (INVX2)                                         0.67       3.24 f
+  dp/rd2_mux/d[0] (mux4_1)                                0.00       3.24 f
+  dp/rd2_mux/U26/Y (AOI22X1)                              0.23       3.47 r
+  dp/rd2_mux/U25/Y (NAND2X1)                              0.20       3.67 f
+  dp/rd2_mux/out[0] (mux4_1)                              0.00       3.67 f
+  dp/inst_alu/b[0] (alu)                                  0.00       3.67 f
+  dp/inst_alu/U48/Y (XOR2X1)                              0.31       3.98 f
+  dp/inst_alu/add_1_root_add_13_2/B[0] (alu_DW01_add_0)
+                                                          0.00       3.98 f
+  dp/inst_alu/add_1_root_add_13_2/U1_0/YC (FAX1)          0.46       4.44 f
+  dp/inst_alu/add_1_root_add_13_2/U1_1/YC (FAX1)          0.46       4.90 f
+  dp/inst_alu/add_1_root_add_13_2/U1_2/YC (FAX1)          0.45       5.35 f
+  dp/inst_alu/add_1_root_add_13_2/U1_3/YC (FAX1)          0.45       5.81 f
+  dp/inst_alu/add_1_root_add_13_2/U1_4/YC (FAX1)          0.45       6.26 f
+  dp/inst_alu/add_1_root_add_13_2/U1_5/YC (FAX1)          0.45       6.71 f
+  dp/inst_alu/add_1_root_add_13_2/U1_6/YC (FAX1)          0.45       7.17 f
+  dp/inst_alu/add_1_root_add_13_2/U1_7/YS (FAX1)          0.48       7.65 r
+  dp/inst_alu/add_1_root_add_13_2/SUM[7] (alu_DW01_add_0)
+                                                          0.00       7.65 r
+  dp/inst_alu/U2/Y (AND2X2)                               0.15       7.80 r
+  dp/inst_alu/U36/Y (AOI22X1)                             0.13       7.93 f
+  dp/inst_alu/U35/Y (NAND2X1)                             0.24       8.17 r
+  dp/inst_alu/result[0] (alu)                             0.00       8.17 r
+  dp/U5/Y (NOR2X1)                                        0.15       8.33 f
+  dp/U3/Y (NAND2X1)                                       0.16       8.48 r
+  dp/U2/Y (NOR2X1)                                        0.15       8.63 f
+  dp/zero (datapath)                                      0.00       8.63 f
+  pc/zero (pc_controller)                                 0.00       8.63 f
+  pc/U2/Y (AOI21X1)                                       0.15       8.78 r
+  pc/U1/Y (INVX2)                                         0.07       8.85 f
+  pc/pcen (pc_controller)                                 0.00       8.85 f
+  dp/pcen (datapath)                                      0.00       8.85 f
+  dp/pc_dtf/en (dff8bit_1)                                0.00       8.85 f
+  dp/pc_dtf/U19/Y (NOR2X1)                                0.53       9.38 r
+  dp/pc_dtf/U18/Y (NOR2X1)                                0.84      10.22 f
+  dp/pc_dtf/U10/Y (AOI22X1)                               0.21      10.43 r
+  dp/pc_dtf/U2/Y (INVX2)                                  0.07      10.51 f
+  dp/pc_dtf/q_reg_0_/D (DFFPOSX1)                         0.00      10.51 f
+  data arrival time                                                 10.51
+
+  clock clk (rise edge)                                  40.00      40.00
+  clock network delay (ideal)                             0.30      40.30
+  dp/pc_dtf/q_reg_0_/CLK (DFFPOSX1)                       0.00      40.30 r
+  library setup time                                     -0.31      39.99
+  data required time                                                39.99
+  --------------------------------------------------------------------------
+  data required time                                                39.99
+  data arrival time                                                -10.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                       29.49
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -nworst 5
+        -max_paths 5
+        -sort_by group
+Design : mips
+Version: O-2018.06-SP1
+Date   : Tue May  7 02:51:43 2019
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: dp/instr_dtf1/q_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: dp/instr_dtf1/q_reg_1_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.30       0.30
+  dp/instr_dtf1/q_reg_1_/CLK (DFFPOSX1)                   0.00       0.30 r
+  dp/instr_dtf1/q_reg_1_/Q (DFFPOSX1)                     0.21       0.51 r
+  dp/instr_dtf1/U11/Y (AOI22X1)                           0.11       0.62 f
+  dp/instr_dtf1/U8/Y (INVX2)                              0.06       0.68 r
+  dp/instr_dtf1/q_reg_1_/D (DFFPOSX1)                     0.00       0.68 r
+  data arrival time                                                  0.68
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.30       0.30
+  dp/instr_dtf1/q_reg_1_/CLK (DFFPOSX1)                   0.00       0.30 r
+  library hold time                                      -0.09       0.21
+  data required time                                                 0.21
+  --------------------------------------------------------------------------
+  data required time                                                 0.21
+  data arrival time                                                 -0.68
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.47
+
+
+  Startpoint: dp/instr_dtf1/q_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: dp/instr_dtf1/q_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.30       0.30
+  dp/instr_dtf1/q_reg_0_/CLK (DFFPOSX1)                   0.00       0.30 r
+  dp/instr_dtf1/q_reg_0_/Q (DFFPOSX1)                     0.21       0.51 r
+  dp/instr_dtf1/U10/Y (AOI22X1)                           0.11       0.62 f
+  dp/instr_dtf1/U9/Y (INVX2)                              0.06       0.68 r
+  dp/instr_dtf1/q_reg_0_/D (DFFPOSX1)                     0.00       0.68 r
+  data arrival time                                                  0.68
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.30       0.30
+  dp/instr_dtf1/q_reg_0_/CLK (DFFPOSX1)                   0.00       0.30 r
+  library hold time                                      -0.09       0.21
+  data required time                                                 0.21
+  --------------------------------------------------------------------------
+  data required time                                                 0.21
+  data arrival time                                                 -0.68
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.47
+
+
+  Startpoint: dp/instr_dtf2/q_reg_4_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: dp/instr_dtf2/q_reg_4_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.30       0.30
+  dp/instr_dtf2/q_reg_4_/CLK (DFFPOSX1)                   0.00       0.30 r
+  dp/instr_dtf2/q_reg_4_/Q (DFFPOSX1)                     0.21       0.51 r
+  dp/instr_dtf2/U14/Y (AOI22X1)                           0.11       0.62 f
+  dp/instr_dtf2/U5/Y (INVX2)                              0.06       0.68 r
+  dp/instr_dtf2/q_reg_4_/D (DFFPOSX1)                     0.00       0.68 r
+  data arrival time                                                  0.68
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.30       0.30
+  dp/instr_dtf2/q_reg_4_/CLK (DFFPOSX1)                   0.00       0.30 r
+  library hold time                                      -0.09       0.21
+  data required time                                                 0.21
+  --------------------------------------------------------------------------
+  data required time                                                 0.21
+  data arrival time                                                 -0.68
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.47
+
+
+  Startpoint: dp/instr_dtf2/q_reg_3_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: dp/instr_dtf2/q_reg_3_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.30       0.30
+  dp/instr_dtf2/q_reg_3_/CLK (DFFPOSX1)                   0.00       0.30 r
+  dp/instr_dtf2/q_reg_3_/Q (DFFPOSX1)                     0.21       0.51 r
+  dp/instr_dtf2/U13/Y (AOI22X1)                           0.11       0.62 f
+  dp/instr_dtf2/U6/Y (INVX2)                              0.06       0.68 r
+  dp/instr_dtf2/q_reg_3_/D (DFFPOSX1)                     0.00       0.68 r
+  data arrival time                                                  0.68
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.30       0.30
+  dp/instr_dtf2/q_reg_3_/CLK (DFFPOSX1)                   0.00       0.30 r
+  library hold time                                      -0.09       0.21
+  data required time                                                 0.21
+  --------------------------------------------------------------------------
+  data required time                                                 0.21
+  data arrival time                                                 -0.68
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.47
+
+
+  Startpoint: dp/instr_dtf3/q_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: dp/instr_dtf3/q_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.30       0.30
+  dp/instr_dtf3/q_reg_0_/CLK (DFFPOSX1)                   0.00       0.30 r
+  dp/instr_dtf3/q_reg_0_/Q (DFFPOSX1)                     0.21       0.51 r
+  dp/instr_dtf3/U10/Y (AOI22X1)                           0.11       0.62 f
+  dp/instr_dtf3/U9/Y (INVX2)                              0.06       0.68 r
+  dp/instr_dtf3/q_reg_0_/D (DFFPOSX1)                     0.00       0.68 r
+  data arrival time                                                  0.68
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.30       0.30
+  dp/instr_dtf3/q_reg_0_/CLK (DFFPOSX1)                   0.00       0.30 r
+  library hold time                                      -0.09       0.21
+  data required time                                                 0.21
+  --------------------------------------------------------------------------
+  data required time                                                 0.21
+  data arrival time                                                 -0.68
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.47
+
+
+1
