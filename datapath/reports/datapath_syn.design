@@ -1,0 +1,157 @@
+Warning: Design 'datapath' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : design
+Design : datapath
+Version: O-2018.06-SP1
+Date   : Tue May 14 01:50:10 2019
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    osu05_stdcells (File: /apps/design_kits/osu_stdcells_v2p7/synopsys/lib/ami05/osu05_stdcells.db)
+
+Local Link Library:
+
+    {osu05_stdcells.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : typical
+    Library : osu05_stdcells
+    Process :   1.00
+    Temperature :  25.00
+    Voltage :   5.00
+
+Wire Loading Model:
+
+    No wire loading specified.
+
+
+Wire Loading Model Mode: top.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    None specified.
+
+Information: This design contains black box (unknown) components. (RPT-8)
+1
+Warning: Design 'datapath' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : hierarchy
+Design : datapath
+Version: O-2018.06-SP1
+Date   : Tue May 14 01:50:10 2019
+****************************************
+
+Warning: 2 unresolved references are not included in this report. (RPT-2)
+
+datapath
+    INVX2                 osu05_stdcells
+    NAND2X1               osu05_stdcells
+    NOR2X1                osu05_stdcells
+    dff8bit_0
+        AOI22X1           osu05_stdcells
+        DFFPOSX1          osu05_stdcells
+        INVX2             osu05_stdcells
+        NOR2X1            osu05_stdcells
+    dff8bit_1
+        AOI22X1           osu05_stdcells
+        DFFPOSX1          osu05_stdcells
+        INVX2             osu05_stdcells
+        NOR2X1            osu05_stdcells
+    dff8bit_2
+        AOI22X1           osu05_stdcells
+        DFFPOSX1          osu05_stdcells
+        INVX2             osu05_stdcells
+        NOR2X1            osu05_stdcells
+    dff8bit_3
+        AOI22X1           osu05_stdcells
+        DFFPOSX1          osu05_stdcells
+        INVX2             osu05_stdcells
+        NOR2X1            osu05_stdcells
+    dff8bit_4
+        AOI22X1           osu05_stdcells
+        DFFPOSX1          osu05_stdcells
+        INVX2             osu05_stdcells
+        NOR2X1            osu05_stdcells
+    dff8bit_5
+        AOI22X1           osu05_stdcells
+        DFFPOSX1          osu05_stdcells
+        INVX2             osu05_stdcells
+        NOR2X1            osu05_stdcells
+    dff8bit_6
+        AOI22X1           osu05_stdcells
+        DFFPOSX1          osu05_stdcells
+        INVX2             osu05_stdcells
+        NOR2X1            osu05_stdcells
+    dff8bit_7
+        AOI22X1           osu05_stdcells
+        DFFPOSX1          osu05_stdcells
+        INVX2             osu05_stdcells
+        NOR2X1            osu05_stdcells
+    dff8bit_8
+        AOI22X1           osu05_stdcells
+        DFFPOSX1          osu05_stdcells
+        INVX2             osu05_stdcells
+        NOR2X1            osu05_stdcells
+    mux4_0
+        AND2X2            osu05_stdcells
+        AOI22X1           osu05_stdcells
+        INVX2             osu05_stdcells
+        NAND2X1           osu05_stdcells
+        NOR2X1            osu05_stdcells
+    mux4_1
+        AND2X2            osu05_stdcells
+        AOI22X1           osu05_stdcells
+        INVX2             osu05_stdcells
+        NAND2X1           osu05_stdcells
+        NOR2X1            osu05_stdcells
+    mux_0
+        AOI22X1           osu05_stdcells
+        BUFX2             osu05_stdcells
+        INVX2             osu05_stdcells
+    mux_1
+        AOI22X1           osu05_stdcells
+        BUFX2             osu05_stdcells
+        INVX2             osu05_stdcells
+    mux_2
+        AOI22X1           osu05_stdcells
+        BUFX2             osu05_stdcells
+        INVX2             osu05_stdcells
+    mux_smallData
+        AOI22X1           osu05_stdcells
+        INVX2             osu05_stdcells
+1

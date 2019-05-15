@@ -1,0 +1,123 @@
+Warning: Design 'datapath' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : area
+Design : datapath
+Version: O-2018.06-SP1
+Date   : Tue May 14 01:50:10 2019
+****************************************
+
+Library(s) Used:
+
+    osu05_stdcells (File: /apps/design_kits/osu_stdcells_v2p7/synopsys/lib/ami05/osu05_stdcells.db)
+
+Number of ports:                          417
+Number of nets:                           782
+Number of cells:                          407
+Number of combinational cells:            318
+Number of sequential cells:                74
+Number of macros/black boxes:               0
+Number of buf/inv:                        138
+Number of references:                      20
+
+Combinational area:              78120.000000
+Buf/Inv area:                    20088.000000
+Noncombinational area:           62208.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                140328.000000
+Total area:                 undefined
+
+Information: This design contains black box (unknown) components. (RPT-8)
+1
+Warning: Design 'datapath' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : cell
+Design : datapath
+Version: O-2018.06-SP1
+Date   : Tue May 14 01:50:10 2019
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U2                        NOR2X1          osu05_stdcells  216.000000
+U3                        NAND2X1         osu05_stdcells  216.000000
+U4                        NOR2X1          osu05_stdcells  216.000000
+U5                        NOR2X1          osu05_stdcells  216.000000
+U6                        NAND2X1         osu05_stdcells  216.000000
+U7                        NOR2X1          osu05_stdcells  216.000000
+U8                        NOR2X1          osu05_stdcells  216.000000
+U9                        INVX2           osu05_stdcells  144.000000
+U10                       INVX2           osu05_stdcells  144.000000
+U11                       INVX2           osu05_stdcells  144.000000
+U12                       INVX2           osu05_stdcells  144.000000
+U13                       INVX2           osu05_stdcells  144.000000
+U14                       INVX2           osu05_stdcells  144.000000
+U15                       INVX2           osu05_stdcells  144.000000
+U16                       INVX2           osu05_stdcells  144.000000
+U17                       INVX2           osu05_stdcells  144.000000
+U18                       INVX2           osu05_stdcells  144.000000
+U19                       INVX2           osu05_stdcells  144.000000
+U20                       INVX2           osu05_stdcells  144.000000
+U21                       INVX2           osu05_stdcells  144.000000
+U22                       INVX2           osu05_stdcells  144.000000
+U23                       INVX2           osu05_stdcells  144.000000
+U24                       INVX2           osu05_stdcells  144.000000
+U25                       INVX2           osu05_stdcells  144.000000
+U26                       INVX2           osu05_stdcells  144.000000
+U27                       INVX2           osu05_stdcells  144.000000
+U28                       INVX2           osu05_stdcells  144.000000
+U29                       INVX2           osu05_stdcells  144.000000
+U30                       INVX2           osu05_stdcells  144.000000
+U31                       INVX2           osu05_stdcells  144.000000
+U32                       INVX2           osu05_stdcells  144.000000
+U33                       INVX2           osu05_stdcells  144.000000
+U34                       INVX2           osu05_stdcells  144.000000
+U35                       INVX2           osu05_stdcells  144.000000
+U36                       INVX2           osu05_stdcells  144.000000
+U37                       INVX2           osu05_stdcells  144.000000
+U38                       INVX2           osu05_stdcells  144.000000
+adr_mux                   mux_1                           4392.000000
+                                                                    h
+aluout_dtf                dff8bit_2                       11376.000000
+                                                                    h, n
+data_dtf                  dff8bit_0                       11376.000000
+                                                                    h, n
+inst_alu                  alu                             0.000000  b
+instr_dtf1                dff8bit_8                       11376.000000
+                                                                    h, n
+instr_dtf2                dff8bit_7                       11376.000000
+                                                                    h, n
+instr_dtf3                dff8bit_6                       11376.000000
+                                                                    h, n
+instr_dtf4                dff8bit_5                       11376.000000
+                                                                    h, n
+nextpc_mux                mux4_0                          8640.000000
+                                                                    h
+pc_dtf                    dff8bit_1                       11376.000000
+                                                                    h, n
+rd1_mux                   mux_2                           4392.000000
+                                                                    h
+rd2_mux                   mux4_1                          8640.000000
+                                                                    h
+rd_dtf1                   dff8bit_4                       11376.000000
+                                                                    h, n
+rd_dtf2                   dff8bit_3                       11376.000000
+                                                                    h, n
+test_reg                  regfile                         0.000000  b
+wa_mux                    mux_smallData                   1656.000000
+                                                                    h
+wd_mux                    mux_0                           4392.000000
+                                                                    h
+--------------------------------------------------------------------------------
+Total 54 cells                                            140328.000000
+1

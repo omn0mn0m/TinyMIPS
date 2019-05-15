@@ -9,7 +9,7 @@
 module top_tb #(parameter WIDTH = 8, REGBITS = 3)();
 
    parameter FINISHTIME = 20000;
-   parameter CLKPERIOD  = 20;
+   parameter CLKPERIOD  = 2.225;
 
 
    reg clk = 0;

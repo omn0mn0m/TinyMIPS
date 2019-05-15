@@ -177,12 +177,12 @@ Information: Test design rule checking completed. (TEST-123)
  stored     detect/active  red/au/abort  coverage  CPU time
  ---------  -------------  ------------  --------  --------
  Begin deterministic ATPG: #uncollapsed_faults=5562, abort_limit=10...
- 0            4674    888         0/0/0    86.32%      0.00
+ 0            4674    888         0/0/0    86.32%      0.01
  0             528    360         0/0/2    94.46%      0.01
  0             212    146         2/0/2    97.75%      0.01
- 0              78     66         4/0/4    98.98%      0.01
- 0              54      8         7/0/7    99.88%      0.01
- 0               1      7         7/0/7    99.89%      0.01
+ 0              78     66         4/0/4    98.98%      0.02
+ 0              54      8         7/0/7    99.88%      0.02
+ 0               1      7         7/0/7    99.89%      0.02
  
             Pattern Summary Report
  -----------------------------------------------

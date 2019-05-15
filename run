@@ -1,0 +1,135 @@
+ncsim: 08.20-s029: (c) Copyright 1995-2011 Cadence Design Systems, Inc.
+  Usage:
+	ncsim [options] [lib.]cell[:view]
+
+  Options:
+	-64BIT                      -- Invoke 64 bit executable
+	-AMSVIVALOG                 -- To generate runObjFile 
+	-ANALOGCONTROL <arg>        -- Analog Simulation control file
+	-APPEND_KEY                 -- Append keystrokes to an existing keyfile
+	-APPEND_LOG                 -- Append the log to an existing logfile
+	-APS_ARGS <arg>             -- to pass in aps commandline arguments for the user
+	-ASSERT_COUNT_TRACES        -- Use trace-based counting for assertions
+	-ASSERT_LOGGING_ERROR_OFF   -- Change default severity from "Error" to "Note" for logging assertion failures
+	-BATCH                      -- Run simulation in batch mode (this is the default)
+	-CDS_IMPLICIT_TMPDIR <arg>  -- Specify location for snapshot access
+	-CDSLIB <arg>               -- Specifies the cds.lib file to be used
+	-CMDFILE <arg>              -- Search-path support
+	-COVDESIGN <arg>            -- Design Name for coverage results databases (see COVWORK and COVTEST) <covwork>/<covdesign>/<covtest>
+	-COVNOMODELDUMP             -- Disable coverage design database (model) dumping
+	-COVOVERWRITE               -- Enable overwriting of coverage output files and directories
+	-COVTEST <arg>              -- Test Name for coverage results databases (see COVWORK and COVDESIGN) <covwork>/<covdesign>/<covtest>
+	-COVWORKDIR <arg>           -- Base Name for coverage results databases (see COVDESIGN and COVTEST) <covwork>/<covdesign>/<covtest>
+	-DUMPPORTS_FORMAT <arg>     -- Specify EVCD format flag for $dumpports
+	-DUT_PROF <arg>             -- generate profiler report with design unit summary.
+	-EPULSE_NO_MSG              -- Suppress e-pulse error message
+	-ERRORMAX <arg>             -- Specifies the maximum number of errors processed
+	-EXIT                       -- Always exit the simulator instead of issuing a TCL prompt
+	-EXTASSERTMSG               -- Prints Extended Assert message Information 
+	-FILE <arg>                 -- Load command line arguments from <arg>
+	-GUI                        -- Enter window mode before running simulation
+	-HDLVAR <arg>               -- Specifies the hdl.var file to be used
+	-HELP                       -- Prints this message
+	-INPUT <arg>                -- Script to be executed during initialization
+	-KEYFILE <arg>              -- Specifies the file to capture keyboard input
+	-LICQUEUE                   -- Use license queue mechanism
+	-LOADCFC <arg>              -- Dynamically load a CFC application
+	-LOADFMI <arg>              -- Dynamically load an FMI Library
+	-LOADPLI1 <arg>             -- Specify the library_name:boot_routine(s) to dynamically load a PLI1.0 application
+	-LOADVHPI <arg>             -- Dynamically load a VHPI application 
+	-LOADVPI <arg>              -- Specify the library_name:boot_routine(s) to dynamically load a VPI application
+	-LOGFILE <arg>              -- Specifies the file to contain log information
+	-LPS_ALT_SRR                -- Enables alternate behavior for save/restore pre-conditions
+	-LPS_ISO_OFF                -- Turn off port isolation
+	-LPS_ISO_VERBOSE            -- Enable information reporting for isolation
+	-LPS_LOGFILE <arg>          -- Specify a log file for low power simulation 
+	-LPS_OFF                    -- Turn off low power simulation
+	-LPS_RTN_LOCK               -- Lock the retained reg value
+	-LPS_RTN_OFF                -- Turn off state retention 
+	-LPS_SIM_VERBOSE <arg>      -- Specify a level of information reporting during simulation 
+	-LPS_STDBY_NOWARN           -- Turn off warning for standby mode input violation
+	-LPS_STIME <arg>            -- Specify a time to start low power simulation
+	-LPS_STL_OFF                -- Turn off state loss 
+	-LPS_VERBOSE <arg>          -- Specify a level of information reporting
+	-MESSAGES                   -- Specifies printing of informative messages
+	-MODELPATH <arg>            -- to specify a list of source files/directories of source files [with/without section identifiers]
+	-NCERROR <arg>              -- Increases the severity of a warning to an error
+	-NCFATAL <arg>              -- Increases the severity of a warn/error to a fatal
+	-NCINITIALIZE <arg>         -- Specify the value to which all the variables will be initialized
+	-NEVERWARN                  -- Disables printing of all warning messages
+	-NO_SDFA_HEADER             -- Do not print the SDF annotation header
+	-NOCIFCHECK                 -- Disables constraint checking in VDA functions for increased performance
+	-NOCOPYRIGHT                -- Suppresses printing of copyright banner
+	-NOIEVLIC                   -- Specifies that IEV license must not be added in the promotion order
+	-NOKEY                      -- Suppress generation of the default keyfile
+	-NOLICPROMOTE               -- Do not use a NC-simulator license if single language is unavailable
+	-NOLICSUSPEND               -- disable suspending licenses for SIGTSTP
+	-NOLOG                      -- Suppress generation of the default logfile
+	-NONTCGLITCH                -- Suppress delayed net glitch suppression messages
+	-NOSOURCE                   -- Do not check source file timestamps (with -UPDATE)
+	-NOSTDOUT                   -- Turn off output to screen
+	-NOTIMEZEROASRTMSG          -- Suppress printing of time zero assert messages from all built in functions
+	-NOWARN <arg>               -- Disables printing of the specified warning message
+	-NTC_VERBOSE                -- Show limits changed by the NTC algorithm in order to  make a circuit converge
+	-OMICHECKINGLEVEL <arg>     -- Specify OMI checking level {Min, Std, Max}
+	-PASSWORD                   -- Prompt for simulation password for SimVision walk-up connections
+	-PLI_EXPORT                 -- Export symbols from loadpli, loadvpi
+	-PLIMAPFILE <arg>           -- Specify the mapping (Table) file to load 
+	-PLINOOPTWARN               -- Do not print pli messages caused by limited visibility
+	-PLINOWARN                  -- Do not print pli warning and error messages
+	-PLIVERBOSE                 -- Verbose information about PLI1.0 and VPI task and fuction registration
+	-PMR                        -- Switch on partition and multi-rate simulation in analog kernel (This option is no longer supported)
+	-PPDB <arg>                 -- Enter PPE mode with the specified database open
+	-PPE                        -- Enter PPE mode which means no active simulation just a gui
+	-PROFILE                    -- generate a run time profile of the design
+	-PROFOUTPUT <arg>           -- Specifies the file to contain profiling information
+	-PROFTHREAD                 -- Allow Threaded processes to profile
+	-QUIET                      -- No error/warning summary output
+	-RANDWARN                   -- Enable all SV randomize failure warnings
+	-REDMEM                     -- Use reduced memory image size
+	-RUN                        -- Begin simulation automatically with interactive or window mode
+	-SCPROCESSORDER <arg>       -- Allow SystemC process order to vary to help detect race conditions
+	-SCSYNCEVERYDELTA <arg>     -- Turn Delta cycle accuracy on/off
+	-SCTLMDBNAME <arg>          -- Specify a database name for the TLM transaction recording
+	-SCTLMNODATA                -- Exclude the data attribute when tracing TLM to save space and speed simulation
+	-SCTLMRECORD                -- Enable SystemC TLM tracing mode 
+	-SDF_NO_WARNINGS            -- Do not report SDF warnings
+	-SDF_VERBOSE                -- Include detailed information in SDF log file
+	-SIMCOMPATIBLE_AMS <arg>    -- Specify compatibility language hspice or spectre. Default is spectre for AMSSpectre simulator and hspice for AMSUltra simulator
+	-SIMLOGSIZE <arg>           -- Specifies the simulation file size limit in Megabytes
+	-SIMVISARGS <arg>           -- Quoted string of SimVision cmdline arguments 
+	-SNDYNNOW                   -- Flag to let specman know that it needs to load libraries with RTLD_NOW
+	-SOLVER <arg>               -- to pass in solver to be used for the user
+	-SPECTRE_ARGS <arg>         -- to pass in spectre commandline arguments for the user
+	-SPROFILE                   -- Generate a VHDL Source Profile
+	-STACKSIZE <arg>            -- maximum size for the pli stack
+	-STATUS                     -- print out the runtime status at the end
+	-SV_LIB <arg>               -- Dynamically load a DPI Library
+	-SV_ROOT <arg>              -- Specify root path for -sv_lib switch
+	-SVRNC <arg>                -- Set SystemVerilog randomization and constraints options
+	-SVSEED <arg>               -- Set SystemVerilog default RNG seed
+	-TCL                        -- Enter interactive mode before running simulation
+	-TIMEUNIT_CASE              -- Prints the time units from std.textio write procedure in upper case characters
+	-UNBUFFERED                 -- Do not buffer output
+	-UPDATE                     -- Verify snapshot and update if necessary
+	-UPTODATE_MESSAGES          -- print out modules that are up-to-date (with -UPDATE)
+	-USELICENSE <arg>           -- Specify list of colon delimited mnemonics to select the license for simulation
+	-VCDEXTEND                  -- Left-extend all vectors in VCD files
+	-VERSION                    -- Prints the version number
+	-VPICOMPAT <arg>            -- Specify the VPI compatibility mode (IEEE Standard version) default
+	-WRITE_METRICS              -- To dump the vsof (verification session output) file which is an input for emanager.
+	-XLSTYLE_UNITS              -- XL style display of time values, same as tcl set display_unit xlstyle
+	-ZLIB <arg>                 -- Compress PAK file using level 1 to 9, with 1 being the default value
+
+  Examples:
+	-- To simulate the snapshot my_lib.top:snap
+	   % ncsim my_lib.top:snap
+	   % ncsim my_lib.top
+	   % ncsim top
+	
+	-- To simulate while writing to the log file ./ncsim.log
+	   % ncsim -log ./ncsim.log my_lib.top:snap
+	
+	-- To update the snapshot my_lib.top:snap and simulate
+	   % ncsim -update my_lib.top:snap
+

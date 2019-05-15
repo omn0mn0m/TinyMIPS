@@ -1,0 +1,439 @@
+Warning: Design 'datapath' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : port
+        -verbose
+Design : datapath
+Version: O-2018.06-SP1
+Date   : Tue May 14 01:50:10 2019
+****************************************
+
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+alucontrol[0]  in      0.0000   0.0000   --       0.41   --         
+alucontrol[1]  in      0.0000   0.0000   --       0.41   --         
+alucontrol[2]  in      0.0000   0.0000   --       0.41   --         
+alusrca        in      0.0000   0.0000   --       0.41   --         
+alusrcb[0]     in      0.0000   0.0000   --       0.41   --         
+alusrcb[1]     in      0.0000   0.0000   --       0.41   --         
+clk            in      0.0000   0.0000   --       0.41   --         
+const_gnd      in      0.0000   0.0000   --       0.41   --         
+iord           in      0.0000   0.0000   --       0.41   --         
+irwrite[0]     in      0.0000   0.0000   --       0.41   --         
+irwrite[1]     in      0.0000   0.0000   --       0.41   --         
+irwrite[2]     in      0.0000   0.0000   --       0.41   --         
+irwrite[3]     in      0.0000   0.0000   --       0.41   --         
+memdata[0]     in      0.0000   0.0000   --       0.41   --         
+memdata[1]     in      0.0000   0.0000   --       0.41   --         
+memdata[2]     in      0.0000   0.0000   --       0.41   --         
+memdata[3]     in      0.0000   0.0000   --       0.41   --         
+memdata[4]     in      0.0000   0.0000   --       0.41   --         
+memdata[5]     in      0.0000   0.0000   --       0.41   --         
+memdata[6]     in      0.0000   0.0000   --       0.41   --         
+memdata[7]     in      0.0000   0.0000   --       0.41   --         
+memtoreg       in      0.0000   0.0000   --       0.41   --         
+pcen           in      0.0000   0.0000   --       0.41   --         
+pcsource[0]    in      0.0000   0.0000   --       0.41   --         
+pcsource[1]    in      0.0000   0.0000   --       0.41   --         
+regdst         in      0.0000   0.0000   --       0.41   --         
+regwrite       in      0.0000   0.0000   --       0.41   --         
+reset          in      0.0000   0.0000   --       0.41   --         
+adr[0]         out     0.1000   0.0000   --      --      --         
+adr[1]         out     0.1000   0.0000   --      --      --         
+adr[2]         out     0.1000   0.0000   --      --      --         
+adr[3]         out     0.1000   0.0000   --      --      --         
+adr[4]         out     0.1000   0.0000   --      --      --         
+adr[5]         out     0.1000   0.0000   --      --      --         
+adr[6]         out     0.1000   0.0000   --      --      --         
+adr[7]         out     0.1000   0.0000   --      --      --         
+instr[0]       out     0.1000   0.0000   --      --      --         
+instr[1]       out     0.1000   0.0000   --      --      --         
+instr[2]       out     0.1000   0.0000   --      --      --         
+instr[3]       out     0.1000   0.0000   --      --      --         
+instr[4]       out     0.1000   0.0000   --      --      --         
+instr[5]       out     0.1000   0.0000   --      --      --         
+instr[6]       out     0.1000   0.0000   --      --      --         
+instr[7]       out     0.1000   0.0000   --      --      --         
+instr[8]       out     0.1000   0.0000   --      --      --         
+instr[9]       out     0.1000   0.0000   --      --      --         
+instr[10]      out     0.1000   0.0000   --      --      --         
+instr[11]      out     0.1000   0.0000   --      --      --         
+instr[12]      out     0.1000   0.0000   --      --      --         
+instr[13]      out     0.1000   0.0000   --      --      --         
+instr[14]      out     0.1000   0.0000   --      --      --         
+instr[15]      out     0.1000   0.0000   --      --      --         
+instr[16]      out     0.1000   0.0000   --      --      --         
+instr[17]      out     0.1000   0.0000   --      --      --         
+instr[18]      out     0.1000   0.0000   --      --      --         
+instr[19]      out     0.1000   0.0000   --      --      --         
+instr[20]      out     0.1000   0.0000   --      --      --         
+instr[21]      out     0.1000   0.0000   --      --      --         
+instr[22]      out     0.1000   0.0000   --      --      --         
+instr[23]      out     0.1000   0.0000   --      --      --         
+instr[24]      out     0.1000   0.0000   --      --      --         
+instr[25]      out     0.1000   0.0000   --      --      --         
+instr[26]      out     0.1000   0.0000   --      --      --         
+instr[27]      out     0.1000   0.0000   --      --      --         
+instr[28]      out     0.1000   0.0000   --      --      --         
+instr[29]      out     0.1000   0.0000   --      --      --         
+instr[30]      out     0.1000   0.0000   --      --      --         
+instr[31]      out     0.1000   0.0000   --      --      --         
+writedata[0]   out     0.1000   0.0000   --      --      --         
+writedata[1]   out     0.1000   0.0000   --      --      --         
+writedata[2]   out     0.1000   0.0000   --      --      --         
+writedata[3]   out     0.1000   0.0000   --      --      --         
+writedata[4]   out     0.1000   0.0000   --      --      --         
+writedata[5]   out     0.1000   0.0000   --      --      --         
+writedata[6]   out     0.1000   0.0000   --      --      --         
+writedata[7]   out     0.1000   0.0000   --      --      --         
+zero           out     0.1000   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+alucontrol[0]      1      --              --              --        -- 
+alucontrol[1]      1      --              --              --        -- 
+alucontrol[2]      1      --              --              --        -- 
+alusrca            1      --              --              --        -- 
+alusrcb[0]         1      --              --              --        -- 
+alusrcb[1]         1      --              --              --        -- 
+clk                1      --              --              --        -- 
+const_gnd          1      --              --              --        -- 
+iord               1      --              --              --        -- 
+irwrite[0]         1      --              --              --        -- 
+irwrite[1]         1      --              --              --        -- 
+irwrite[2]         1      --              --              --        -- 
+irwrite[3]         1      --              --              --        -- 
+memdata[0]         1      --              --              --        -- 
+memdata[1]         1      --              --              --        -- 
+memdata[2]         1      --              --              --        -- 
+memdata[3]         1      --              --              --        -- 
+memdata[4]         1      --              --              --        -- 
+memdata[5]         1      --              --              --        -- 
+memdata[6]         1      --              --              --        -- 
+memdata[7]         1      --              --              --        -- 
+memtoreg           1      --              --              --        -- 
+pcen               1      --              --              --        -- 
+pcsource[0]        1      --              --              --        -- 
+pcsource[1]        1      --              --              --        -- 
+regdst             1      --              --              --        -- 
+regwrite           1      --              --              --        -- 
+reset              1      --              --              --        -- 
+adr[0]             1      --              --              --        -- 
+adr[1]             1      --              --              --        -- 
+adr[2]             1      --              --              --        -- 
+adr[3]             1      --              --              --        -- 
+adr[4]             1      --              --              --        -- 
+adr[5]             1      --              --              --        -- 
+adr[6]             1      --              --              --        -- 
+adr[7]             1      --              --              --        -- 
+instr[0]           1      --              --              --        -- 
+instr[1]           1      --              --              --        -- 
+instr[2]           1      --              --              --        -- 
+instr[3]           1      --              --              --        -- 
+instr[4]           1      --              --              --        -- 
+instr[5]           1      --              --              --        -- 
+instr[6]           1      --              --              --        -- 
+instr[7]           1      --              --              --        -- 
+instr[8]           1      --              --              --        -- 
+instr[9]           1      --              --              --        -- 
+instr[10]          1      --              --              --        -- 
+instr[11]          1      --              --              --        -- 
+instr[12]          1      --              --              --        -- 
+instr[13]          1      --              --              --        -- 
+instr[14]          1      --              --              --        -- 
+instr[15]          1      --              --              --        -- 
+instr[16]          1      --              --              --        -- 
+instr[17]          1      --              --              --        -- 
+instr[18]          1      --              --              --        -- 
+instr[19]          1      --              --              --        -- 
+instr[20]          1      --              --              --        -- 
+instr[21]          1      --              --              --        -- 
+instr[22]          1      --              --              --        -- 
+instr[23]          1      --              --              --        -- 
+instr[24]          1      --              --              --        -- 
+instr[25]          1      --              --              --        -- 
+instr[26]          1      --              --              --        -- 
+instr[27]          1      --              --              --        -- 
+instr[28]          1      --              --              --        -- 
+instr[29]          1      --              --              --        -- 
+instr[30]          1      --              --              --        -- 
+instr[31]          1      --              --              --        -- 
+writedata[0]       1      --              --              --        -- 
+writedata[1]       1      --              --              --        -- 
+writedata[2]       1      --              --              --        -- 
+writedata[3]       1      --              --              --        -- 
+writedata[4]       1      --              --              --        -- 
+writedata[5]       1      --              --              --        -- 
+writedata[6]       1      --              --              --        -- 
+writedata[7]       1      --              --              --        -- 
+zero               1      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+alucontrol[0]
+              2.00    2.00    2.00    2.00  clk       1.00  
+alucontrol[1]
+              2.00    2.00    2.00    2.00  clk       1.00  
+alucontrol[2]
+              2.00    2.00    2.00    2.00  clk       1.00  
+alusrca       2.00    2.00    2.00    2.00  clk       1.00  
+alusrcb[0]    2.00    2.00    2.00    2.00  clk       1.00  
+alusrcb[1]    2.00    2.00    2.00    2.00  clk       1.00  
+clk           2.00    2.00    2.00    2.00  clk       1.00  
+const_gnd     2.00    2.00    2.00    2.00  clk       1.00  
+iord          2.00    2.00    2.00    2.00  clk       1.00  
+irwrite[0]    2.00    2.00    2.00    2.00  clk       1.00  
+irwrite[1]    2.00    2.00    2.00    2.00  clk       1.00  
+irwrite[2]    2.00    2.00    2.00    2.00  clk       1.00  
+irwrite[3]    2.00    2.00    2.00    2.00  clk       1.00  
+memdata[0]    2.00    2.00    2.00    2.00  clk       1.00  
+memdata[1]    2.00    2.00    2.00    2.00  clk       1.00  
+memdata[2]    2.00    2.00    2.00    2.00  clk       1.00  
+memdata[3]    2.00    2.00    2.00    2.00  clk       1.00  
+memdata[4]    2.00    2.00    2.00    2.00  clk       1.00  
+memdata[5]    2.00    2.00    2.00    2.00  clk       1.00  
+memdata[6]    2.00    2.00    2.00    2.00  clk       1.00  
+memdata[7]    2.00    2.00    2.00    2.00  clk       1.00  
+memtoreg      2.00    2.00    2.00    2.00  clk       1.00  
+pcen          2.00    2.00    2.00    2.00  clk       1.00  
+pcsource[0]   2.00    2.00    2.00    2.00  clk       1.00  
+pcsource[1]   2.00    2.00    2.00    2.00  clk       1.00  
+regdst        2.00    2.00    2.00    2.00  clk       1.00  
+regwrite      2.00    2.00    2.00    2.00  clk       1.00  
+reset         2.00    2.00    2.00    2.00  clk       1.00  
+
+
+                    Driving Cell
+Input Port   Rise(min/max)      Fall(min/max)      Mult(min/max)  Attrs(min/max)
+--------------------------------------------------------------------------------
+alucontrol[0]
+             osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+alucontrol[1]
+             osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+alucontrol[2]
+             osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+alusrca      osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+alusrcb[0]   osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+alusrcb[1]   osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+clk          osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+const_gnd    osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+iord         osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+irwrite[0]   osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+irwrite[1]   osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+irwrite[2]   osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+irwrite[3]   osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+memdata[0]   osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+memdata[1]   osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+memdata[2]   osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+memdata[3]   osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+memdata[4]   osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+memdata[5]   osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+memdata[6]   osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+memdata[7]   osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+memtoreg     osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+pcen         osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+pcsource[0]  osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+pcsource[1]  osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+regdst       osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+regwrite     osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+reset        osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+alucontrol[0]
+              --      --     --      --     --      --     --     --        -- 
+alucontrol[1]
+              --      --     --      --     --      --     --     --        -- 
+alucontrol[2]
+              --      --     --      --     --      --     --     --        -- 
+alusrca       --      --     --      --     --      --     --     --        -- 
+alusrcb[0]    --      --     --      --     --      --     --     --        -- 
+alusrcb[1]    --      --     --      --     --      --     --     --        -- 
+clk           --      --     --      --     --      --     --     --        -- 
+const_gnd     --      --     --      --     --      --     --     --        -- 
+iord          --      --     --      --     --      --     --     --        -- 
+irwrite[0]    --      --     --      --     --      --     --     --        -- 
+irwrite[1]    --      --     --      --     --      --     --     --        -- 
+irwrite[2]    --      --     --      --     --      --     --     --        -- 
+irwrite[3]    --      --     --      --     --      --     --     --        -- 
+memdata[0]    --      --     --      --     --      --     --     --        -- 
+memdata[1]    --      --     --      --     --      --     --     --        -- 
+memdata[2]    --      --     --      --     --      --     --     --        -- 
+memdata[3]    --      --     --      --     --      --     --     --        -- 
+memdata[4]    --      --     --      --     --      --     --     --        -- 
+memdata[5]    --      --     --      --     --      --     --     --        -- 
+memdata[6]    --      --     --      --     --      --     --     --        -- 
+memdata[7]    --      --     --      --     --      --     --     --        -- 
+memtoreg      --      --     --      --     --      --     --     --        -- 
+pcen          --      --     --      --     --      --     --     --        -- 
+pcsource[0]   --      --     --      --     --      --     --     --        -- 
+pcsource[1]   --      --     --      --     --      --     --     --        -- 
+regdst        --      --     --      --     --      --     --     --        -- 
+regwrite      --      --     --      --     --      --     --     --        -- 
+reset         --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+alucontrol[0]
+              --      --      --      -- 
+alucontrol[1]
+              --      --      --      -- 
+alucontrol[2]
+              --      --      --      -- 
+alusrca       --      --      --      -- 
+alusrcb[0]    --      --      --      -- 
+alusrcb[1]    --      --      --      -- 
+clk           --      --      --      -- 
+const_gnd     --      --      --      -- 
+iord          --      --      --      -- 
+irwrite[0]    --      --      --      -- 
+irwrite[1]    --      --      --      -- 
+irwrite[2]    --      --      --      -- 
+irwrite[3]    --      --      --      -- 
+memdata[0]    --      --      --      -- 
+memdata[1]    --      --      --      -- 
+memdata[2]    --      --      --      -- 
+memdata[3]    --      --      --      -- 
+memdata[4]    --      --      --      -- 
+memdata[5]    --      --      --      -- 
+memdata[6]    --      --      --      -- 
+memdata[7]    --      --      --      -- 
+memtoreg      --      --      --      -- 
+pcen          --      --      --      -- 
+pcsource[0]   --      --      --      -- 
+pcsource[1]   --      --      --      -- 
+regdst        --      --      --      -- 
+regwrite      --      --      --      -- 
+reset         --      --      --      -- 
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+adr[0]        1.65    1.65    1.65    1.65  clk       8.00  
+adr[1]        1.65    1.65    1.65    1.65  clk       8.00  
+adr[2]        1.65    1.65    1.65    1.65  clk       8.00  
+adr[3]        1.65    1.65    1.65    1.65  clk       8.00  
+adr[4]        1.65    1.65    1.65    1.65  clk       8.00  
+adr[5]        1.65    1.65    1.65    1.65  clk       8.00  
+adr[6]        1.65    1.65    1.65    1.65  clk       8.00  
+adr[7]        1.65    1.65    1.65    1.65  clk       8.00  
+instr[0]      1.65    1.65    1.65    1.65  clk       8.00  
+instr[1]      1.65    1.65    1.65    1.65  clk       8.00  
+instr[2]      1.65    1.65    1.65    1.65  clk       8.00  
+instr[3]      1.65    1.65    1.65    1.65  clk       8.00  
+instr[4]      1.65    1.65    1.65    1.65  clk       8.00  
+instr[5]      1.65    1.65    1.65    1.65  clk       8.00  
+instr[6]      1.65    1.65    1.65    1.65  clk       8.00  
+instr[7]      1.65    1.65    1.65    1.65  clk       8.00  
+instr[8]      1.65    1.65    1.65    1.65  clk       8.00  
+instr[9]      1.65    1.65    1.65    1.65  clk       8.00  
+instr[10]     1.65    1.65    1.65    1.65  clk       8.00  
+instr[11]     1.65    1.65    1.65    1.65  clk       8.00  
+instr[12]     1.65    1.65    1.65    1.65  clk       8.00  
+instr[13]     1.65    1.65    1.65    1.65  clk       8.00  
+instr[14]     1.65    1.65    1.65    1.65  clk       8.00  
+instr[15]     1.65    1.65    1.65    1.65  clk       8.00  
+instr[16]     1.65    1.65    1.65    1.65  clk       8.00  
+instr[17]     1.65    1.65    1.65    1.65  clk       8.00  
+instr[18]     1.65    1.65    1.65    1.65  clk       8.00  
+instr[19]     1.65    1.65    1.65    1.65  clk       8.00  
+instr[20]     1.65    1.65    1.65    1.65  clk       8.00  
+instr[21]     1.65    1.65    1.65    1.65  clk       8.00  
+instr[22]     1.65    1.65    1.65    1.65  clk       8.00  
+instr[23]     1.65    1.65    1.65    1.65  clk       8.00  
+instr[24]     1.65    1.65    1.65    1.65  clk       8.00  
+instr[25]     1.65    1.65    1.65    1.65  clk       8.00  
+instr[26]     1.65    1.65    1.65    1.65  clk       8.00  
+instr[27]     1.65    1.65    1.65    1.65  clk       8.00  
+instr[28]     1.65    1.65    1.65    1.65  clk       8.00  
+instr[29]     1.65    1.65    1.65    1.65  clk       8.00  
+instr[30]     1.65    1.65    1.65    1.65  clk       8.00  
+instr[31]     1.65    1.65    1.65    1.65  clk       8.00  
+writedata[0]
+              1.65    1.65    1.65    1.65  clk       8.00  
+writedata[1]
+              1.65    1.65    1.65    1.65  clk       8.00  
+writedata[2]
+              1.65    1.65    1.65    1.65  clk       8.00  
+writedata[3]
+              1.65    1.65    1.65    1.65  clk       8.00  
+writedata[4]
+              1.65    1.65    1.65    1.65  clk       8.00  
+writedata[5]
+              1.65    1.65    1.65    1.65  clk       8.00  
+writedata[6]
+              1.65    1.65    1.65    1.65  clk       8.00  
+writedata[7]
+              1.65    1.65    1.65    1.65  clk       8.00  
+zero          1.65    1.65    1.65    1.65  clk       8.00  
+
+1

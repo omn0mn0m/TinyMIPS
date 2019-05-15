@@ -3,7 +3,7 @@
 Report : design
 Design : mips
 Version: O-2018.06-SP1
-Date   : Tue May  7 02:51:43 2019
+Date   : Tue May 14 01:01:39 2019
 ****************************************
 
 Design allows ideal nets on clock nets.
@@ -69,7 +69,7 @@ Design Parameters:
 Report : hierarchy
 Design : mips
 Version: O-2018.06-SP1
-Date   : Tue May  7 02:51:43 2019
+Date   : Tue May 14 01:01:39 2019
 ****************************************
 
 mips

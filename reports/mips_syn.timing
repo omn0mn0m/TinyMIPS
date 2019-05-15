@@ -8,7 +8,7 @@ Report : timing
         -sort_by group
 Design : mips
 Version: O-2018.06-SP1
-Date   : Tue May  7 02:51:43 2019
+Date   : Tue May 14 01:01:39 2019
 ****************************************
 
 Operating Conditions: typical   Library: osu05_stdcells
@@ -355,7 +355,7 @@ Report : timing
         -sort_by group
 Design : mips
 Version: O-2018.06-SP1
-Date   : Tue May  7 02:51:43 2019
+Date   : Tue May 14 01:01:39 2019
 ****************************************
 
 Operating Conditions: typical   Library: osu05_stdcells

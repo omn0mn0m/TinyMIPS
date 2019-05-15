@@ -1,0 +1,3 @@
+ncsim: 08.20-s029: (c) Copyright 1995-2011 Cadence Design Systems, Inc.
+ncsim: *W,DLNOHV: Unable to find an 'hdl.var' file to load in.
+ncsim: *F,NOSNAP: Snapshot '/apps/cadence/ius/tools/inca/files/ncsimrc' does not exist in the libraries.

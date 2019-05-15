@@ -1,0 +1,341 @@
+Warning: Design 'datapath' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 5
+        -max_paths 5
+        -sort_by group
+Design : datapath
+Version: O-2018.06-SP1
+Date   : Tue May 14 01:50:10 2019
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: iord (input port clocked by clk)
+  Endpoint: adr[4] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 f
+  iord (in)                                0.04       2.34 f
+  adr_mux/sel (mux_1)                      0.00       2.34 f
+  adr_mux/U18/Y (BUFX2)                    0.42       2.76 f
+  adr_mux/U9/Y (INVX2)                     0.36       3.13 r
+  adr_mux/U13/Y (AOI22X1)                  0.15       3.27 f
+  adr_mux/U4/Y (INVX2)                     0.17       3.44 r
+  adr_mux/out[4] (mux_1)                   0.00       3.44 r
+  adr[4] (out)                             0.00       3.44 r
+  data arrival time                                   3.44
+
+  clock clk (rise edge)                   40.00      40.00
+  clock network delay (ideal)              0.30      40.30
+  output external delay                   -1.65      38.65
+  data required time                                 38.65
+  -----------------------------------------------------------
+  data required time                                 38.65
+  data arrival time                                  -3.44
+  -----------------------------------------------------------
+  slack (MET)                                        35.21
+
+
+  Startpoint: iord (input port clocked by clk)
+  Endpoint: adr[3] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 f
+  iord (in)                                0.04       2.34 f
+  adr_mux/sel (mux_1)                      0.00       2.34 f
+  adr_mux/U18/Y (BUFX2)                    0.42       2.76 f
+  adr_mux/U9/Y (INVX2)                     0.36       3.13 r
+  adr_mux/U14/Y (AOI22X1)                  0.15       3.27 f
+  adr_mux/U5/Y (INVX2)                     0.17       3.44 r
+  adr_mux/out[3] (mux_1)                   0.00       3.44 r
+  adr[3] (out)                             0.00       3.44 r
+  data arrival time                                   3.44
+
+  clock clk (rise edge)                   40.00      40.00
+  clock network delay (ideal)              0.30      40.30
+  output external delay                   -1.65      38.65
+  data required time                                 38.65
+  -----------------------------------------------------------
+  data required time                                 38.65
+  data arrival time                                  -3.44
+  -----------------------------------------------------------
+  slack (MET)                                        35.21
+
+
+  Startpoint: iord (input port clocked by clk)
+  Endpoint: adr[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 f
+  iord (in)                                0.04       2.34 f
+  adr_mux/sel (mux_1)                      0.00       2.34 f
+  adr_mux/U18/Y (BUFX2)                    0.42       2.76 f
+  adr_mux/U9/Y (INVX2)                     0.36       3.13 r
+  adr_mux/U15/Y (AOI22X1)                  0.15       3.27 f
+  adr_mux/U6/Y (INVX2)                     0.17       3.44 r
+  adr_mux/out[2] (mux_1)                   0.00       3.44 r
+  adr[2] (out)                             0.00       3.44 r
+  data arrival time                                   3.44
+
+  clock clk (rise edge)                   40.00      40.00
+  clock network delay (ideal)              0.30      40.30
+  output external delay                   -1.65      38.65
+  data required time                                 38.65
+  -----------------------------------------------------------
+  data required time                                 38.65
+  data arrival time                                  -3.44
+  -----------------------------------------------------------
+  slack (MET)                                        35.21
+
+
+  Startpoint: iord (input port clocked by clk)
+  Endpoint: adr[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 f
+  iord (in)                                0.04       2.34 f
+  adr_mux/sel (mux_1)                      0.00       2.34 f
+  adr_mux/U18/Y (BUFX2)                    0.42       2.76 f
+  adr_mux/U9/Y (INVX2)                     0.36       3.13 r
+  adr_mux/U16/Y (AOI22X1)                  0.15       3.27 f
+  adr_mux/U7/Y (INVX2)                     0.17       3.44 r
+  adr_mux/out[1] (mux_1)                   0.00       3.44 r
+  adr[1] (out)                             0.00       3.44 r
+  data arrival time                                   3.44
+
+  clock clk (rise edge)                   40.00      40.00
+  clock network delay (ideal)              0.30      40.30
+  output external delay                   -1.65      38.65
+  data required time                                 38.65
+  -----------------------------------------------------------
+  data required time                                 38.65
+  data arrival time                                  -3.44
+  -----------------------------------------------------------
+  slack (MET)                                        35.21
+
+
+  Startpoint: iord (input port clocked by clk)
+  Endpoint: adr[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 f
+  iord (in)                                0.04       2.34 f
+  adr_mux/sel (mux_1)                      0.00       2.34 f
+  adr_mux/U18/Y (BUFX2)                    0.42       2.76 f
+  adr_mux/U9/Y (INVX2)                     0.36       3.13 r
+  adr_mux/U17/Y (AOI22X1)                  0.15       3.27 f
+  adr_mux/U8/Y (INVX2)                     0.17       3.44 r
+  adr_mux/out[0] (mux_1)                   0.00       3.44 r
+  adr[0] (out)                             0.00       3.44 r
+  data arrival time                                   3.44
+
+  clock clk (rise edge)                   40.00      40.00
+  clock network delay (ideal)              0.30      40.30
+  output external delay                   -1.65      38.65
+  data required time                                 38.65
+  -----------------------------------------------------------
+  data required time                                 38.65
+  data arrival time                                  -3.44
+  -----------------------------------------------------------
+  slack (MET)                                        35.21
+
+
+1
+Warning: Design 'datapath' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -nworst 5
+        -max_paths 5
+        -sort_by group
+Design : datapath
+Version: O-2018.06-SP1
+Date   : Tue May 14 01:50:10 2019
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: data_dtf/q_reg_4_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_dtf/q_reg_4_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  data_dtf/q_reg_4_/CLK (DFFPOSX1)         0.00       0.30 r
+  data_dtf/q_reg_4_/Q (DFFPOSX1)           0.25       0.55 r
+  data_dtf/U14/Y (AOI22X1)                 0.11       0.66 f
+  data_dtf/U5/Y (INVX2)                    0.06       0.72 r
+  data_dtf/q_reg_4_/D (DFFPOSX1)           0.00       0.72 r
+  data arrival time                                   0.72
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  data_dtf/q_reg_4_/CLK (DFFPOSX1)         0.00       0.30 r
+  library hold time                       -0.09       0.21
+  data required time                                  0.21
+  -----------------------------------------------------------
+  data required time                                  0.21
+  data arrival time                                  -0.72
+  -----------------------------------------------------------
+  slack (MET)                                         0.51
+
+
+  Startpoint: data_dtf/q_reg_3_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_dtf/q_reg_3_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  data_dtf/q_reg_3_/CLK (DFFPOSX1)         0.00       0.30 r
+  data_dtf/q_reg_3_/Q (DFFPOSX1)           0.25       0.55 r
+  data_dtf/U13/Y (AOI22X1)                 0.11       0.66 f
+  data_dtf/U6/Y (INVX2)                    0.06       0.72 r
+  data_dtf/q_reg_3_/D (DFFPOSX1)           0.00       0.72 r
+  data arrival time                                   0.72
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  data_dtf/q_reg_3_/CLK (DFFPOSX1)         0.00       0.30 r
+  library hold time                       -0.09       0.21
+  data required time                                  0.21
+  -----------------------------------------------------------
+  data required time                                  0.21
+  data arrival time                                  -0.72
+  -----------------------------------------------------------
+  slack (MET)                                         0.51
+
+
+  Startpoint: data_dtf/q_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_dtf/q_reg_2_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  data_dtf/q_reg_2_/CLK (DFFPOSX1)         0.00       0.30 r
+  data_dtf/q_reg_2_/Q (DFFPOSX1)           0.25       0.55 r
+  data_dtf/U12/Y (AOI22X1)                 0.11       0.66 f
+  data_dtf/U7/Y (INVX2)                    0.06       0.72 r
+  data_dtf/q_reg_2_/D (DFFPOSX1)           0.00       0.72 r
+  data arrival time                                   0.72
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  data_dtf/q_reg_2_/CLK (DFFPOSX1)         0.00       0.30 r
+  library hold time                       -0.09       0.21
+  data required time                                  0.21
+  -----------------------------------------------------------
+  data required time                                  0.21
+  data arrival time                                  -0.72
+  -----------------------------------------------------------
+  slack (MET)                                         0.51
+
+
+  Startpoint: data_dtf/q_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_dtf/q_reg_1_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  data_dtf/q_reg_1_/CLK (DFFPOSX1)         0.00       0.30 r
+  data_dtf/q_reg_1_/Q (DFFPOSX1)           0.25       0.55 r
+  data_dtf/U11/Y (AOI22X1)                 0.11       0.66 f
+  data_dtf/U8/Y (INVX2)                    0.06       0.72 r
+  data_dtf/q_reg_1_/D (DFFPOSX1)           0.00       0.72 r
+  data arrival time                                   0.72
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  data_dtf/q_reg_1_/CLK (DFFPOSX1)         0.00       0.30 r
+  library hold time                       -0.09       0.21
+  data required time                                  0.21
+  -----------------------------------------------------------
+  data required time                                  0.21
+  data arrival time                                  -0.72
+  -----------------------------------------------------------
+  slack (MET)                                         0.51
+
+
+  Startpoint: data_dtf/q_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_dtf/q_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  data_dtf/q_reg_0_/CLK (DFFPOSX1)         0.00       0.30 r
+  data_dtf/q_reg_0_/Q (DFFPOSX1)           0.25       0.55 r
+  data_dtf/U10/Y (AOI22X1)                 0.11       0.66 f
+  data_dtf/U9/Y (INVX2)                    0.06       0.72 r
+  data_dtf/q_reg_0_/D (DFFPOSX1)           0.00       0.72 r
+  data arrival time                                   0.72
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  data_dtf/q_reg_0_/CLK (DFFPOSX1)         0.00       0.30 r
+  library hold time                       -0.09       0.21
+  data required time                                  0.21
+  -----------------------------------------------------------
+  data required time                                  0.21
+  data arrival time                                  -0.72
+  -----------------------------------------------------------
+  slack (MET)                                         0.51
+
+
+1
